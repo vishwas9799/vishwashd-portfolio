@@ -1,18 +1,1276 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=Vishwas_Portfolio.html">
-  <title>Vishwas | Portfolio</title>
-  <link rel="canonical" href="Vishwas_Portfolio.html">
-  <script>
-    window.location.replace(new URL("Vishwas_Portfolio.html", window.location.href).href);
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Vishwas | Marketing &amp; Brand Portfolio</title>
+<meta name="description" content="Vishwas’s marketing and brand portfolio: selected project work, regional brand-building experience, campaign media and a proposed direction for TMT steel brands.">
+<meta name="theme-color" content="#07060a">
+<meta property="og:title" content="Vishwas | Marketing &amp; Brand Portfolio">
+<meta property="og:description" content="Brand building, regional storytelling, paid media and digital experiences.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..600&family=Geist+Mono:wght@400..500&family=Instrument+Serif:ital@1&display=swap">
+<style>
+/* Layout: dark editorial portfolio. Fixed video ground, glass surfaces, one ember accent with violet support. */
+:root{
+  --bg:#07060a; --bg-2:#0e0c13; --text:#f2eff7; --muted:#8d879a; --line:rgba(255,255,255,.09);
+  --accent:#ff7a3d; --accent-2:#a58bff; --ok:#7be3a6; --rose:#ff5c8c;
+  --text-2:rgba(242,239,247,.74);
+  --glass:linear-gradient(155deg,rgba(255,255,255,.085),rgba(255,255,255,.025) 45%,rgba(255,255,255,.04));
+  --glass-border:rgba(255,255,255,.12); --glass-blur:blur(22px) saturate(150%); --radius:22px;
+  --gutter:clamp(16px,4vw,48px); --maxw:1280px; --header:68px;
+  --sans:"Geist",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --ease:cubic-bezier(.2,.7,.1,1);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:400;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:180px 180px}
+body.modal-open{overflow:hidden}
+img,video,svg{max-width:100%}
+img{display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:inherit}
+h1,h2,h3,h4{margin:0;font-weight:500;letter-spacing:-.035em;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+::selection{background:rgba(255,122,61,.38);color:#fff}
+.skip{position:fixed;left:16px;top:-80px;z-index:500;background:var(--text);color:#0b0910;padding:10px 16px;border-radius:999px;font-weight:500;transition:top .2s}
+.skip:focus{top:calc(12px + env(safe-area-inset-top,0px))}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--gutter)}
+.serif{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent);letter-spacing:-.01em;padding-right:.04em}
+.mono{font-family:var(--mono)}
+.glass{background:var(--glass);border:1px solid var(--glass-border);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 30px 60px -24px rgba(0,0,0,.7),0 12px 28px -16px rgba(0,0,0,.6)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 12px/1.2 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.eyebrow b{font-weight:500;color:var(--accent)}
+.h2{font-size:clamp(34px,4.6vw,64px);line-height:1.02;letter-spacing:-.045em}
+.lead{font-size:clamp(16px,1.25vw,18px);line-height:1.6;color:var(--text-2);max-width:40ch}
+
+/* Buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;font-size:15px;font-weight:500;letter-spacing:-.01em;white-space:nowrap;transition:transform .3s var(--ease),background .3s,box-shadow .3s,border-color .3s}
+.btn .arr{display:inline-block;transition:transform .3s var(--ease)}
+.btn:hover .arr{transform:translateX(3px)}
+.btn-light{background:var(--text);color:#0b0910;box-shadow:0 14px 34px -14px rgba(255,122,61,.55),inset 0 -2px 0 rgba(0,0,0,.08)}
+.btn-light:hover{background:#fff;transform:translateY(-1px)}
+.btn-ghost{color:var(--text)}
+.btn-ghost:hover{border-color:rgba(255,255,255,.24);transform:translateY(-1px)}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);font:500 11px/1.2 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--text-2)}
+
+/* Background video + veil */
+#bgVideo{position:fixed;top:-4vh;left:-12vw;width:124vw;height:108vh;max-width:none;object-fit:cover;opacity:.6;z-index:0;pointer-events:none;background:var(--bg);-webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.6) 35%,#000 70%);mask-image:linear-gradient(90deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,.6) 35%,#000 70%);will-change:transform,opacity}
+#veil{position:fixed;inset:0;background:#07060a;opacity:0;z-index:1;pointer-events:none}
+main,.site-footer{position:relative;z-index:2}
+
+/* Header */
+.site-header{position:fixed;inset:0 0 auto;z-index:60;padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid transparent;transition:background .4s,border-color .4s}
+.site-header.scrolled{background:rgba(7,6,10,.6);-webkit-backdrop-filter:var(--glass-blur);backdrop-filter:var(--glass-blur);border-bottom-color:var(--line)}
+.nav{height:var(--header);display:flex;align-items:center;gap:24px}
+.logo{display:inline-flex;align-items:center;gap:10px;font-weight:600;font-size:17px;letter-spacing:-.025em}
+.logo-ring{width:22px;height:22px;border-radius:50%;flex:none;background:conic-gradient(from 200deg,var(--accent),var(--accent-2),var(--rose),var(--accent));-webkit-mask:radial-gradient(circle,transparent 5.5px,#000 6.5px);mask:radial-gradient(circle,transparent 5.5px,#000 6.5px);animation:spin 9s linear infinite}
+@keyframes spin{to{transform:rotate(1turn)}}
+.nav-links{flex:1;display:flex;justify-content:center;gap:clamp(16px,2.4vw,32px);font-size:14px;color:var(--muted)}
+.nav-links a{transition:color .2s;padding:6px 0}
+.nav-links a:hover{color:var(--text)}
+.nav .btn{min-height:40px;padding:0 18px;font-size:14px}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow-x:clip}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 55% 60% at 18% 52%,rgba(7,6,10,.78),transparent 75%)}
+.hero-grid{flex:1;display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:clamp(24px,4vw,56px);padding-top:calc(var(--header) + 56px);padding-bottom:72px;width:100%}
+.hero-copy{min-width:0;position:relative;z-index:3}
+.hero .eyebrow{padding:8px 14px 8px 11px;border-radius:999px;color:var(--text-2)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(255,122,61,.18),0 0 12px var(--accent);flex:none}
+.hero-title{font-size:clamp(44px,6.4vw,100px);line-height:.98;letter-spacing:-.05em;margin:28px 0 26px}
+.hero-title .ln{display:block;overflow:hidden;padding-bottom:.1em;margin-bottom:-.1em}
+.hero-title .ln>span{display:inline-block;transform:translateY(105%);animation:rise 1.1s var(--ease) forwards;animation-delay:calc(.12s + var(--i) * .1s)}
+.hero-title .serif{font-size:1.06em;letter-spacing:-.025em}
+@keyframes rise{to{transform:none}}
+.hero-copy .lead{max-width:34rem}
+.hero-copy .btns{margin-top:34px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;font:400 12px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.hero-meta li{display:flex;align-items:baseline;gap:8px}
+.hero-meta b{font:500 15px/1 var(--sans);letter-spacing:-.01em;color:var(--text);text-transform:none}
+
+/* Hero flow window */
+.stage{position:relative;height:clamp(360px,34vw,440px);margin-right:calc(-1 * var(--gutter) - 6vw);perspective:1497px;perspective-origin:30% 50%;min-width:0;z-index:2}
+.rig{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateY(-16deg) rotateX(7deg);will-change:transform}
+.layer{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform;pointer-events:none}
+.flow{position:absolute;left:0;top:-2%;width:106%;height:115%;border-radius:18px;display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(160deg,rgba(26,22,34,.96),rgba(11,9,16,.95) 45%,rgba(15,13,21,.96));border:1px solid rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 70px 120px -30px rgba(0,0,0,.85);-webkit-mask-image:linear-gradient(90deg,#000 70%,transparent);mask-image:linear-gradient(90deg,#000 70%,transparent)}
+.flow-bar{flex:none;display:flex;align-items:center;gap:14px;height:44px;padding:0 16px;border-bottom:1px solid var(--line);font-size:12.5px;white-space:nowrap}
+.flow-bar .fb-title{font-weight:500;color:var(--text)}
+.flow-bar .fb-meta{font:400 11px var(--mono);color:var(--muted);padding-left:14px;border-left:1px solid var(--line)}
+.live{display:inline-flex;align-items:center;gap:6px;height:22px;padding:0 9px;border-radius:999px;font:500 10px var(--mono);letter-spacing:.12em;color:var(--ok);background:rgba(123,227,166,.08);border:1px solid rgba(123,227,166,.28)}
+.live i{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok);animation:blink 1.4s steps(2,jump-none) infinite}
+@keyframes blink{50%{opacity:.25}}
+.flow-body{position:relative;flex:1;background-image:radial-gradient(rgba(255,255,255,.075) 1px,transparent 1.3px);background-size:18px 18px;background-position:9px 9px}
+.tools{position:absolute;left:14px;top:14px;display:flex;flex-direction:column;gap:2px;padding:4px;border-radius:10px;background:rgba(255,255,255,.035);border:1px solid var(--line);z-index:1}
+.tools span{width:26px;height:26px;display:grid;place-items:center;font-size:13px;color:var(--muted);border-radius:7px}
+.tools span:first-child{background:rgba(255,255,255,.08);color:var(--text)}
+.zoomtag{position:absolute;left:56px;top:14px;height:24px;padding:0 8px;display:grid;place-items:center;border-radius:7px;font:500 10.5px var(--mono);color:var(--muted);background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.wires{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.wires path{fill:none;vector-effect:non-scaling-stroke}
+.wires .wire{stroke:rgba(255,255,255,.2);stroke-width:1.5}
+.wires .pulse{stroke-width:2.2;stroke-linecap:round;stroke-dasharray:7 93;stroke-dashoffset:100;animation:pulse 2.4s linear infinite}
+.wires .pulse.e{stroke:var(--accent);filter:drop-shadow(0 0 4px var(--accent))}
+.wires .pulse.v{stroke:var(--accent-2);filter:drop-shadow(0 0 4px var(--accent-2))}
+.wires .pulse:nth-of-type(2n){animation-delay:-1.2s}
+@keyframes pulse{to{stroke-dashoffset:0}}
+.wlabel{position:absolute;transform:translate(-50%,-50%);padding:2px 7px;border-radius:6px;font:500 9.5px/1.4 var(--mono);letter-spacing:.06em;color:var(--muted);background:#120f18;border:1px solid var(--line)}
+.fnode,.fbase{position:absolute;width:23%;padding:12px 11px;border-radius:9px}
+.fbase{transform:translate(0,-50%);border:1px dashed rgba(255,255,255,.14);background:rgba(14,12,19,.88);box-shadow:inset 0 0 18px rgba(0,0,0,.55)}
+.fbase>*{visibility:hidden}
+.fbase::before,.fbase::after{content:"";position:absolute;top:50%;width:7px;height:7px;margin-top:-3.5px;border-radius:50%;background:#1c1824;border:1px solid rgba(255,255,255,.38)}
+.fbase::before{left:-4px}.fbase::after{right:-4px}
+.fnode{z-index:2;transform:translate(calc(-14px + var(--px,0px)),calc(-50% - 30px + var(--py,0px)));background:linear-gradient(180deg,rgba(42,36,54,.98),rgba(24,20,32,.98));border:1px solid rgba(255,255,255,.13);box-shadow:-10px 32px 34px -12px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.09);transition:border-color .35s,box-shadow .35s}
+.fnode.on{border-color:rgba(255,122,61,.9);box-shadow:-10px 32px 34px -12px rgba(0,0,0,.8),0 0 0 3px rgba(255,122,61,.14),0 0 30px rgba(255,122,61,.38),inset 0 1px 0 rgba(255,255,255,.1)}
+.fnode b{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:500;line-height:1.25;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fnode small{display:flex;align-items:center;gap:6px;margin-top:6px;font:400 10px/1.2 var(--mono);color:var(--muted);white-space:nowrap}
+.fnode .ic{width:16px;height:16px;flex:none;border-radius:5px;display:grid;place-items:center;font-size:9px;color:#0b0910;background:var(--accent)}
+.fnode .ic.v{background:var(--accent-2)}.fnode .ic.r{background:var(--rose)}.fnode .ic.g{background:var(--ok)}
+.spin{width:10px;height:10px;border-radius:50%;border:1.5px solid rgba(255,255,255,.18);border-top-color:var(--accent);animation:spin .9s linear infinite;flex:none}
+.runs{position:absolute;left:7%;bottom:12px;width:30%;font:400 10px/1.2 var(--mono);color:var(--muted)}
+.runs-h{display:flex;justify-content:space-between;letter-spacing:.12em;padding-bottom:7px;margin-bottom:4px;border-bottom:1px solid var(--line)}
+.runs li{display:grid;grid-template-columns:auto 1fr auto;gap:8px;padding:4px 0;white-space:nowrap}
+.runs li span{overflow:hidden;text-overflow:ellipsis;color:var(--text-2)}
+.runs li em{font-style:normal;color:var(--ok)}
+.runs li.new{animation:rowIn .5s var(--ease)}
+@keyframes rowIn{from{opacity:0;transform:translateY(-6px)}}
+.glare{position:absolute;inset:0;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(520px circle at var(--gx,62%) var(--gy,28%),rgba(255,255,255,.08),transparent 45%)}
+.chip{position:absolute;display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 15px;border-radius:999px;font-size:12.5px;font-weight:500;white-space:nowrap;background:linear-gradient(155deg,rgba(40,34,52,.75),rgba(18,15,24,.7))}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 10px var(--ok)}
+.chip.a{left:46%;top:-3%}
+.chip.b{left:-6%;bottom:-17%}
+.chip.b i{background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.chip .mono{color:var(--muted);font-size:11px}
+
+/* Marquee */
+.marquee{position:relative;z-index:3;padding:26px 0 30px;border-top:1px solid var(--line)}
+.mq-label{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
+.mq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.mq-track{display:flex;width:max-content;animation:mq 42s linear infinite}
+.mq:hover .mq-track{animation-play-state:paused}
+.mq ul{display:flex;align-items:center;gap:52px;padding-right:52px}
+.mq li{display:flex;align-items:center;gap:52px;font-size:clamp(19px,2vw,26px);font-weight:500;letter-spacing:-.03em;color:rgba(242,239,247,.5);white-space:nowrap}
+.mq li::after{content:"";width:6px;height:6px;transform:rotate(45deg);background:linear-gradient(135deg,var(--accent),var(--accent-2));opacity:.8}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* Sections */
+.section{padding-block:clamp(96px,14vh,170px)}
+section[id]{scroll-margin-top:var(--header)}
+.sec-head{display:grid;grid-template-columns:1.2fr .8fr;gap:24px 48px;align-items:end}
+.sec-head .h2{margin-top:20px}
+.sec-head .lead{justify-self:end}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px clamp(32px,6vw,96px)}
+.about-grid .h2{margin-top:20px}
+.about-copy{display:flex;flex-direction:column;gap:18px;color:var(--text-2);max-width:60ch;min-width:0}
+.about-copy .first{font-size:clamp(20px,1.9vw,26px);line-height:1.35;letter-spacing:-.02em;color:var(--text)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.caps{margin-top:clamp(72px,10vh,120px)}
+.caps-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px;padding-bottom:28px}
+.caps-head h3{font-size:clamp(24px,2.4vw,32px)}
+.caps-head p{color:var(--muted)}
+.caps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px}
+.cap{padding:26px 0 34px;border-top:1px solid var(--line);min-width:0}
+.cap span{font:500 12px var(--mono);color:var(--accent);letter-spacing:.06em}
+.cap h4{font-size:20px;letter-spacing:-.025em;margin:14px 0 10px}
+.cap p{font-size:15px;line-height:1.55;color:var(--muted);max-width:36ch}
+
+/* Work — horizontal scroll */
+.hscroll{position:relative}
+.hs-sticky{display:flex;flex-direction:column;justify-content:center;gap:clamp(20px,3.6vh,36px);padding-block:calc(var(--header) + 24px) 40px}
+.hs-sticky>.wrap{width:100%}
+.hs-head{display:grid;grid-template-columns:1fr auto;gap:16px 48px;align-items:end}
+.hs-head .h2{font-size:clamp(32px,3.8vw,54px);margin-top:16px}
+.hs-head .lead{max-width:34ch;font-size:15px}
+.hs-viewport{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-block:6px}
+.hs-viewport::-webkit-scrollbar{display:none}
+.hs-track{display:flex;gap:18px;width:max-content;padding-inline:max(var(--gutter),calc((100vw - var(--maxw)) / 2 + var(--gutter)));will-change:transform}
+.hs-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px}
+.hs-progress{flex:1 1 240px;height:1px;background:var(--line);position:relative;overflow:hidden}
+.hs-progress i{position:absolute;inset:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transform-origin:0 50%;transform:scaleX(0)}
+.hs-count{font:500 11px var(--mono);letter-spacing:.12em;color:var(--muted);white-space:nowrap}
+.hs-note{font-size:12.5px;line-height:1.5;color:var(--muted);max-width:70ch}
+.linkbtn{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px}
+.linkbtn:hover{text-decoration-color:var(--accent)}
+html.js .hscroll.hs-on .hs-sticky{position:sticky;top:0;height:100svh;overflow:hidden;overflow:clip}
+html.js .hscroll.hs-on .hs-viewport{overflow:visible;scroll-snap-type:none}
+.wcard{position:relative;flex:0 0 min(78vw,360px,44svh);aspect-ratio:4/5;max-width:100%;border-radius:var(--radius);overflow:hidden;isolation:isolate;display:block;scroll-snap-align:center;border:1px solid var(--glass-border);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 30px 60px -24px rgba(0,0,0,.75);background:var(--bg-2);transition:border-color .4s,transform .5s var(--ease)}
+.wcard:hover{border-color:rgba(255,122,61,.5)}
+.wc-img{position:absolute;inset:0;z-index:-2;background:linear-gradient(160deg,#1b1623,#0b090f)}
+.wc-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.02);transition:transform 1.2s var(--ease)}
+.wcard:hover .wc-img img,.wcard:focus-visible .wc-img img{transform:scale(1.08)}
+.wc-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(7,6,10,.78) 0%,rgba(7,6,10,0) 25%,rgba(7,6,10,0) 40%,rgba(7,6,10,.78) 62%,rgba(7,6,10,.92) 82%)}
+.wc-top{position:absolute;top:16px;left:18px;right:16px;display:flex;justify-content:space-between;align-items:center;font:500 11px var(--mono);letter-spacing:.12em}
+.wc-tag{padding:5px 9px;border-radius:999px;background:rgba(7,6,10,.55);border:1px solid rgba(255,255,255,.14);color:var(--text-2)}
+.wc-bottom{position:absolute;left:20px;right:20px;bottom:18px;display:flex;flex-direction:column;gap:7px}
+.wc-kicker{font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.wc-title{font-size:clamp(22px,2vw,27px);font-weight:500;letter-spacing:-.035em;line-height:1.05}
+.wc-desc{font-size:14px;line-height:1.45;color:var(--text-2)}
+.wc-cta{display:flex;align-items:center;gap:8px;margin-top:4px;font:500 10.5px var(--mono);letter-spacing:.14em;color:var(--accent)}
+.art{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:14px;padding:0 24px 30%}
+.art small{font:500 10.5px var(--mono);letter-spacing:.16em;color:var(--muted)}
+.art em{font:italic 400 clamp(26px,2.5vw,34px)/1.05 var(--serif);color:var(--text)}
+.art-rebar{background:repeating-linear-gradient(118deg,transparent 0 16px,rgba(255,122,61,.2) 16px 18px,transparent 18px 34px),radial-gradient(circle at 78% 22%,rgba(255,122,61,.42),transparent 58%),linear-gradient(160deg,#1e1620,#0b090f)}
+.art-wheel{background:repeating-radial-gradient(circle at 82% 30%,transparent 0 22px,rgba(165,139,255,.2) 22px 24px),radial-gradient(circle at 82% 30%,rgba(165,139,255,.45),transparent 55%),linear-gradient(160deg,#17142a,#0b090f)}
+
+/* Reveal line */
+.reveal{position:relative;height:220vh}
+.reveal-inner{position:sticky;top:0;height:100svh;display:grid;place-items:center}
+.reveal p{max-width:22ch;font-size:clamp(30px,4.6vw,68px);line-height:1.1;letter-spacing:-.04em;font-weight:500;text-align:left}
+.reveal .w{opacity:.12;transition:opacity .5s ease}
+.reveal .w.lit{opacity:1}
+
+/* Regional */
+.reg-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px clamp(32px,6vw,96px);align-items:center}
+.reg-copy{display:flex;flex-direction:column;gap:26px;min-width:0}
+.reg-copy .h2 .serif{display:inline-block}
+.values{display:grid;gap:0}
+.values div{display:grid;grid-template-columns:180px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.values div:last-child{border-bottom:1px solid var(--line)}
+.values strong{font-weight:500;font-size:15px}
+.values span{color:var(--muted);font-size:15px}
+.phones{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.6vw,20px);align-items:center}
+.phone{display:block;border-radius:24px;padding:6px;transition:transform .6s var(--ease),border-color .3s}
+.phone img{width:100%;aspect-ratio:333/592;object-fit:cover;border-radius:18px;background:var(--bg-2)}
+.phone:nth-child(2){transform:translateY(-34px)}
+.phone:hover{transform:translateY(-8px);border-color:rgba(255,122,61,.45)}
+.phone:nth-child(2):hover{transform:translateY(-42px)}
+.src{margin-top:22px;font-size:12.5px;line-height:1.6;color:var(--muted)}
+.src a{color:var(--text);text-decoration:underline;text-decoration-color:rgba(255,255,255,.3);text-underline-offset:3px}
+
+/* TMT — stacking cards */
+.stack{display:flex;flex-direction:column;gap:12vh;margin-top:clamp(48px,7vh,80px);padding-bottom:8vh}
+.scard{position:sticky;top:calc(13vh + var(--i) * 20px);min-height:min(66vh,540px);display:grid;grid-template-columns:1fr 1fr;border-radius:28px;overflow:hidden;transform-origin:50% 0;will-change:transform;background:var(--glass),var(--bg-2);border:1px solid var(--glass-border);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 -20px 60px -20px rgba(0,0,0,.8),0 40px 80px -30px rgba(0,0,0,.8)}
+.sc-copy{display:flex;flex-direction:column;justify-content:space-between;gap:28px;padding:clamp(26px,4vw,52px);min-width:0}
+.sc-step{display:flex;justify-content:space-between;gap:12px;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.sc-step b{color:var(--accent);font-weight:500}
+.sc-copy h3{font-size:clamp(26px,2.7vw,40px);line-height:1.06;letter-spacing:-.04em;margin-bottom:16px}
+.sc-copy p{color:var(--text-2);max-width:46ch}
+.sc-copy ul{display:grid;gap:10px;margin-top:22px}
+.sc-copy li{display:grid;grid-template-columns:18px 1fr;gap:10px;font-size:15px;line-height:1.45}
+.sc-copy li::before{content:"";width:16px;height:16px;margin-top:2px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0 3px,transparent 3.5px),rgba(255,122,61,.12);border:1px solid rgba(255,122,61,.4)}
+.sc-visual{position:relative;margin:12px;border-radius:20px;overflow:hidden;display:grid;place-items:center;min-height:260px;background-color:#120f18;background-size:cover;background-position:center;border:1px solid var(--line)}
+.sc-visual svg{width:92%;height:auto;max-height:92%;overflow:visible}
+.sc-tag{position:absolute;left:16px;top:14px;font:500 10px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:rgba(242,239,247,.55)}
+.sc-dim{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;border-radius:inherit;z-index:3}
+/* visual primitives */
+.v-txt{font-family:var(--mono);font-size:10px;fill:var(--text-2);letter-spacing:.04em}
+.v-muted{fill:var(--muted)}
+.v-line{stroke:rgba(255,255,255,.18);stroke-width:1;fill:none}
+.v-dash{stroke-dasharray:3 4}
+.v-pill{fill:rgba(14,12,19,.85);stroke:rgba(255,255,255,.16)}
+.v-pill.hot{stroke:rgba(255,122,61,.6)}
+.hub-ring{transform-box:fill-box;transform-origin:center;animation:hubPulse 2.4s ease-out infinite}
+@keyframes hubPulse{from{opacity:.8;transform:scale(1)}to{opacity:0;transform:scale(1.9)}}
+.draw{stroke-dasharray:1;stroke-dashoffset:0}
+.js .draw{stroke-dashoffset:1}
+.js .in .draw{animation:draw 1.8s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.js .fade{opacity:0}
+.js .in .fade{animation:fadeIn .7s ease forwards;animation-delay:var(--d,1.2s)}
+@keyframes fadeIn{to{opacity:1}}
+.gauge-val{stroke-dasharray:100;stroke-dashoffset:28}
+.js .gauge-val{stroke-dashoffset:100}
+.js .in .gauge-val{animation:gauge 1.6s var(--ease) forwards}
+@keyframes gauge{to{stroke-dashoffset:28}}
+.bar{transform-box:fill-box;transform-origin:left center}
+.js .bar{transform:scaleX(0)}
+.js .in .bar{animation:grow .9s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes grow{to{transform:scaleX(1)}}
+.scrub{animation:scrub 5.5s linear infinite}
+@keyframes scrub{from{transform:translateX(0)}to{transform:translateX(270px)}}
+
+.measure{display:grid;grid-template-columns:auto 1fr;gap:16px 40px;align-items:center;margin-top:clamp(24px,4vh,40px);padding:26px 0;border-block:1px solid var(--line)}
+.measure strong{font:500 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.measure ul{display:flex;flex-wrap:wrap;gap:8px}
+.measure p{grid-column:2;font-size:13.5px;color:var(--muted)}
+.approach{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:clamp(56px,8vh,88px);counter-reset:a}
+.approach li{position:relative;padding-top:26px;min-width:0}
+.approach li::before{content:"";position:absolute;left:0;right:-32px;top:0;height:1px;background:linear-gradient(90deg,var(--accent),rgba(165,139,255,.5) 60%,transparent)}
+.approach li:last-child::before{right:0}
+.approach li::after{content:"";position:absolute;left:0;top:-4px;width:9px;height:9px;border-radius:50%;background:var(--bg);border:1.5px solid var(--accent)}
+.approach b{font:500 12px var(--mono);color:var(--muted);letter-spacing:.08em}
+.approach h3{font-size:22px;margin:10px 0 8px}
+.approach p{font-size:15px;color:var(--muted);line-height:1.55}
+
+/* Stats */
+.stats{position:relative;background:var(--bg);padding:clamp(96px,14vh,150px) 0 clamp(80px,12vh,130px)}
+.stats::before,.stats::after{content:"";position:absolute;left:0;right:0;pointer-events:none}
+.stats::before{top:-120px;height:120px;background:linear-gradient(rgba(7,6,10,0),var(--bg))}
+.stats::after{bottom:-100px;height:100px;background:linear-gradient(var(--bg),rgba(7,6,10,0))}
+.stats-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:28px}
+.stats-head h2{font-size:clamp(24px,2.4vw,32px)}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{border-radius:var(--radius);padding:26px 24px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.stat-num{font-size:clamp(52px,6vw,86px);line-height:1;font-weight:500;letter-spacing:-.06em;font-variant-numeric:tabular-nums}
+.stat-label{font-size:16px;font-weight:500;margin-top:12px}
+.stat-sub{font-size:13px;color:var(--muted);line-height:1.45}
+.spark{display:block;width:100%;height:auto;margin-top:auto;padding-top:18px;overflow:visible}
+.spark .sl{fill:none;stroke:url(#sparkGrad);stroke-width:1.5;stroke-dasharray:1;stroke-dashoffset:0;transition:stroke-dashoffset 1.6s var(--ease)}
+.js .stat:not(.in) .spark .sl{stroke-dashoffset:1}
+.js .stat:not(.in) .spark circle{opacity:0}
+.spark circle{fill:var(--bg-2);stroke:var(--accent);stroke-width:1.5;transition:opacity .4s ease;transition-delay:var(--d)}
+
+/* CTA */
+#tmt{padding-bottom:clamp(40px,7vh,88px)}
+.cta-sec{padding-block:clamp(64px,10vh,120px) clamp(96px,14vh,160px)}
+.cta{position:relative;border-radius:32px;overflow:hidden;text-align:center;padding:clamp(56px,9vw,120px) clamp(20px,5vw,80px);background:radial-gradient(ellipse 80% 70% at 50% 35%,rgba(7,6,10,.1),rgba(7,6,10,.88) 78%),url("assets/bg-cta.webp") center bottom/cover,var(--bg-2)}
+.cta .h2{margin:22px auto 22px;max-width:16ch}
+.cta .lead{margin-inline:auto;max-width:52ch}
+.cta .btns{justify-content:center;margin-top:34px}
+.contacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:760px;margin:44px auto 0;text-align:left}
+.cdet{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;padding:16px 18px;border-radius:16px;background:rgba(7,6,10,.55);border:1px solid var(--line);min-width:0}
+.cdet small{grid-column:1/-1;font:500 10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.cdet a{font-size:16px;font-weight:500;letter-spacing:-.01em;overflow-wrap:break-word;min-width:0}
+.cdet a:hover{color:var(--accent)}
+.copy{height:30px;padding:0 12px;border-radius:999px;border:1px solid var(--line);font:500 11px var(--mono);letter-spacing:.08em;color:var(--text-2);transition:border-color .2s,color .2s}
+.copy:hover{border-color:rgba(255,255,255,.3);color:var(--text)}
+.copy.done{color:var(--ok);border-color:rgba(123,227,166,.4)}
+.nextc{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px;margin-top:30px}
+.nextc>span{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+
+/* Footer */
+.site-footer{background:#050408;border-top:1px solid var(--line);padding-top:clamp(64px,9vh,96px);overflow:hidden}
+.f-grid{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:40px 32px}
+.f-brand p{margin:18px 0 22px;color:var(--muted);font-size:14.5px;max-width:34ch}
+.pill-live{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 12px;border-radius:999px;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ok);background:rgba(123,227,166,.07);border:1px solid rgba(123,227,166,.25)}
+.pill-live i{width:6px;height:6px;border-radius:50%;background:var(--ok);box-shadow:0 0 8px var(--ok);animation:blink 1.4s steps(2,jump-none) infinite}
+.f-col h4{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.f-col ul{display:grid;gap:11px}
+.f-col a,.f-col button{font-size:14.5px;color:var(--text-2);transition:color .2s}
+.f-col a:hover,.f-col button:hover{color:var(--text)}
+.wordmark{display:block;width:100%;height:auto;margin-top:clamp(48px,8vh,80px);overflow:visible}
+.wm{font-family:var(--sans);font-weight:600;font-size:250px;letter-spacing:-12px}
+.wm-base{fill:rgba(255,255,255,.035);stroke:rgba(255,255,255,.16);stroke-width:1}
+.wm-dots{fill:none;stroke:rgba(255,255,255,.6);stroke-width:2.4;stroke-linecap:round;stroke-dasharray:.1 16;animation:wmDots 6s linear infinite}
+.wm-run{fill:none;stroke:url(#wmGrad);stroke-width:2.2;stroke-linecap:round;stroke-dasharray:90 420;animation:wmRun 7s linear infinite;filter:drop-shadow(0 0 6px rgba(255,122,61,.85))}
+@keyframes wmDots{to{stroke-dashoffset:-161}}
+@keyframes wmRun{to{stroke-dashoffset:-1020}}
+.f-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;padding:24px 0 calc(28px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+
+/* Dialogs */
+dialog{color:var(--text);padding:0;border:0;background:transparent;max-width:none;max-height:none}
+dialog::backdrop{background:rgba(4,3,7,.74);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.pdialog,.ndialog{width:min(1120px,calc(100vw - 32px));max-height:calc(100svh - 32px);margin:auto;border-radius:24px;overflow:auto;overscroll-behavior:contain;background:linear-gradient(155deg,rgba(255,255,255,.07),rgba(255,255,255,.02) 45%),#0d0b12;border:1px solid var(--glass-border);box-shadow:0 40px 120px -20px rgba(0,0,0,.9)}
+.ndialog{width:min(760px,calc(100vw - 32px))}
+.pd-top{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 18px 16px 24px;background:rgba(13,11,18,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.pd-top strong{display:block;font-size:18px;font-weight:500;letter-spacing:-.02em;margin-top:4px}
+.pd-tools{display:flex;gap:8px}
+.ibtn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:17px;transition:border-color .2s,background .2s}
+.ibtn:hover{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.07)}
+.pd-body{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;padding:24px}
+.pd-media{min-width:0}
+.pd-stage{height:min(62svh,560px);border-radius:16px;background:#050408;border:1px solid var(--line);display:grid;place-items:center;overflow:hidden}
+.pd-stage img,.pd-stage video{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+.pd-stage video{width:100%;height:100%;background:#000}
+.pd-box{padding:32px;max-width:420px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px}
+.pd-box h3{font-size:26px}
+.pd-box p{color:var(--muted)}
+.pd-sum{width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-end;gap:16px;padding:clamp(24px,4vw,44px);text-align:left;background:repeating-linear-gradient(118deg,transparent 0 16px,rgba(255,122,61,.14) 16px 18px,transparent 18px 34px),radial-gradient(circle at 80% 20%,rgba(255,122,61,.35),transparent 60%),#120d14}
+.pd-sum.v{background:repeating-radial-gradient(circle at 80% 25%,transparent 0 22px,rgba(165,139,255,.16) 22px 24px),radial-gradient(circle at 80% 25%,rgba(165,139,255,.4),transparent 55%),#100e1c}
+.pd-sum h3{font:italic 400 clamp(34px,4vw,54px)/1.02 var(--serif);white-space:pre-line}
+.pd-sum p{font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.pd-caption{margin-top:12px;font-size:13px;color:var(--muted)}
+.pd-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
+.pd-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.pd-tab{height:34px;padding:0 14px;border-radius:999px;border:1px solid var(--line);font-size:13px;color:var(--text-2)}
+.pd-tab[aria-pressed="true"]{background:var(--text);color:#0b0910;border-color:var(--text)}
+.pd-open{font:500 11px var(--mono);letter-spacing:.1em;color:var(--accent)}
+.pd-detail{min-width:0;display:flex;flex-direction:column;gap:18px}
+.pd-detail h2{font-size:clamp(28px,3vw,40px);line-height:1.05;letter-spacing:-.04em}
+.pd-detail>p{color:var(--text-2)}
+.pd-facts{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);margin:0;border-top:1px solid var(--line)}
+.pd-facts dt,.pd-facts dd{margin:0;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+.pd-facts dt{font:500 11px/1.6 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-right:12px}
+.pd-insight{padding:16px 18px;border-radius:14px;background:rgba(255,122,61,.07);border:1px solid rgba(255,122,61,.25);font-size:15px;line-height:1.55}
+.pd-note{font-size:12.5px;color:var(--muted);line-height:1.55}
+.pd-links{display:flex;flex-wrap:wrap;gap:8px}
+.pd-links a{font-size:13px;padding:7px 12px;border-radius:999px;border:1px solid var(--line);color:var(--text-2)}
+.pd-links a:hover{border-color:var(--accent);color:var(--text)}
+.n-body{padding:24px 24px 32px;display:flex;flex-direction:column;gap:22px;color:var(--text-2);font-size:15px}
+.n-list{display:grid;gap:0}
+.n-list li{padding:16px 0;border-top:1px solid var(--line)}
+.n-list strong{display:block;color:var(--text);font-weight:500;margin-bottom:4px}
+.n-list p{font-size:14px;color:var(--muted)}
+.n-refs{display:flex;flex-wrap:wrap;gap:8px}
+.n-refs a{font-size:13px;padding:7px 12px;border-radius:999px;border:1px solid var(--line)}
+.n-refs a:hover{border-color:var(--accent)}
+.n-body h3{font-size:14px;font-family:var(--mono);font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr;padding-top:calc(var(--header) + 40px);padding-bottom:110px}
+  .stage{height:380px;margin-top:8px}
+  .chip.b{left:2%}
+  .about-grid,.reg-grid{grid-template-columns:1fr}
+  .caps-grid{grid-template-columns:repeat(2,1fr)}
+  .sec-head{grid-template-columns:1fr}
+  .sec-head .lead{justify-self:start}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .approach{grid-template-columns:repeat(2,1fr);row-gap:44px}
+  .approach li::before{right:0}
+  .pd-body{grid-template-columns:1fr}
+  .pd-stage{height:min(56svh,520px)}
+}
+@media (max-width:900px){
+  .f-grid{grid-template-columns:1fr 1fr}
+  .f-brand{grid-column:1/-1}
+}
+@media (max-width:760px){
+  .nav-links{display:none}
+  .nav{justify-content:space-between}
+  .scard{grid-template-columns:1fr;top:calc(var(--header) + 12px + var(--i) * 14px)}
+  .sc-visual{order:-1;min-height:220px;max-height:260px}
+  .sc-visual svg{max-height:236px}
+  .caps-grid{grid-template-columns:1fr}
+  .hs-head{grid-template-columns:1fr}
+  .values div{grid-template-columns:1fr;gap:4px}
+  .measure{grid-template-columns:1fr}
+  .measure p{grid-column:1}
+  .contacts{grid-template-columns:minmax(0,1fr)}
+  .phone:nth-child(2){transform:translateY(-18px)}
+  .pd-body{padding:16px;gap:22px}
+  .pd-top{padding:12px 12px 12px 16px}
+}
+@media (max-width:560px){
+  .stage{height:300px}
+  .flow{width:150%}
+  .chip{display:none}
+  .runs{width:40%}
+  .approach{grid-template-columns:1fr}
+  .stat{padding:20px 18px 18px}
+  .btn{padding:0 20px}
+  .hero-copy .btns .btn{flex:1 1 auto}
+  .cdet a{font-size:15px}
+}
+
+/* Reduced motion: final states, no movement */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.001ms!important;transition-delay:0s!important}
+  .wires .pulse,.packet,.scrub,.hub-ring{display:none}
+  .reveal .w{opacity:1}
+  .mq-track{flex-wrap:wrap;width:auto}
+  .mq ul[aria-hidden]{display:none}
+}
+</style>
 </head>
 <body>
-  <p>Opening the portfolio… If you are not redirected,
-    <a href="Vishwas_Portfolio.html">click here to view it</a>.
-  </p>
+<a class="skip" href="#main">Skip to content</a>
+
+<video id="bgVideo" muted loop playsinline preload="auto" poster="assets/hero-poster.jpg" aria-hidden="true" tabindex="-1" disablepictureinpicture>
+  <source src="assets/hero.webm" type="video/webm">
+  <source src="assets/hero.mp4" type="video/mp4">
+</video>
+<div id="veil" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Vishwas, back to top"><span class="logo-ring" aria-hidden="true"></span>Vishwas</a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#regional">Regional</a>
+      <a href="#tmt">For your TMT brand</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-light" href="#contact">Let’s talk</a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="heroTitle">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow glass"><span class="dot" aria-hidden="true"></span>Marketing &amp; brand portfolio · 2026</span>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="ln"><span style="--i:0">I help brands</span></span>
+          <span class="ln"><span style="--i:1">get <em class="serif">recognised.</em></span></span>
+        </h1>
+        <p class="lead">Brand building, regional storytelling, paid media and digital experiences. Selected projects and practical experience from my work in marketing.</p>
+        <div class="btns">
+          <a class="btn btn-light" href="#work">Explore my work <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost glass" href="#tmt">For your TMT brand</a>
+        </div>
+        <ul class="hero-meta">
+          <li><b>09</b> selected projects</li>
+          <li><b>06</b> core capabilities</li>
+          <li><b>Meta + Google</b> ads</li>
+        </ul>
+      </div>
+
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="rig" id="rig">
+          <div class="layer" data-depth="0">
+            <div class="flow" id="flow">
+              <div class="flow-bar">
+                <span class="fb-title">TMT launch · campaign flow</span>
+                <span class="fb-meta">4 stages · 2 channels · sample</span>
+                <span class="live"><i></i>LIVE</span>
+              </div>
+              <div class="flow-body" id="flowBody">
+                <svg class="wires" viewBox="0 0 100 100" preserveAspectRatio="none">
+                  <path class="wire" d="M28 52 C33 52 32 30 38 30"/>
+                  <path class="wire" d="M28 52 C33 52 32 74 38 74"/>
+                  <path class="wire" d="M59 30 C65 30 64 52 70 52"/>
+                  <path class="wire" d="M59 74 C65 74 64 52 70 52"/>
+                  <path class="pulse e" pathLength="100" d="M28 52 C33 52 32 30 38 30"/>
+                  <path class="pulse v" pathLength="100" d="M28 52 C33 52 32 74 38 74"/>
+                  <path class="pulse e" pathLength="100" d="M59 30 C65 30 64 52 70 52"/>
+                  <path class="pulse v" pathLength="100" d="M59 74 C65 74 64 52 70 52"/>
+                </svg>
+                <div class="tools"><span>↖</span><span>+</span><span>⟲</span></div>
+                <span class="zoomtag">100%</span>
+                <span class="wlabel" style="left:33%;top:40%">social</span>
+                <span class="wlabel" style="left:33%;top:64%">search</span>
+                <div class="fnode" style="left:7%;top:52%"><b><span class="ic">◆</span>Brand story set</b><small>identity · voice</small></div>
+                <div class="fnode" style="left:38%;top:30%"><b><span class="ic v">▲</span>Regional creative</b><small>social · Meta Ads</small></div>
+                <div class="fnode" style="left:38%;top:74%"><b><span class="ic r">●</span>Search intent</b><small>Google Ads</small></div>
+                <div class="fnode" style="left:70%;top:52%"><b><span class="ic g">✓</span>Dealer enquiry</b><small><span class="spin"></span>routing · 2 min</small></div>
+                <div class="runs">
+                  <div class="runs-h"><span>LAST ENQUIRIES</span><span>sample</span></div>
+                  <ol id="runs">
+                    <li><time>10:41</time><span>#4412 Fe 500D price</span><em>Search ✓</em></li>
+                    <li><time>10:38</time><span>#4409 Dealer near me</span><em>Meta ✓</em></li>
+                    <li><time>10:33</time><span>#4405 Bulk order</span><em>Search ✓</em></li>
+                  </ol>
+                </div>
+              </div>
+              <div class="glare" id="glare"></div>
+            </div>
+          </div>
+          <div class="layer" data-depth="90"><div class="chip a glass"><i></i>Facebook · Instagram · LinkedIn</div></div>
+          <div class="layer" data-depth="140"><div class="chip b glass"><i></i><span id="chipB">now · Brand story set</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee">
+      <div class="wrap mq-label">Brands in my work</div>
+      <div class="mq">
+        <div class="mq-track">
+          <ul><li>Lokal</li><li>Reelies</li><li>JSW Steels</li><li>Tata Motors</li><li>Nissan Gravite</li><li>LIC</li><li>Indifeast</li><li>Wheelsmart</li></ul>
+          <ul aria-hidden="true"><li>Lokal</li><li>Reelies</li><li>JSW Steels</li><li>Tata Motors</li><li>Nissan Gravite</li><li>LIC</li><li>Indifeast</li><li>Wheelsmart</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about" aria-labelledby="aboutTitle">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <span class="eyebrow"><b>01</b> About me</span>
+          <h2 class="h2" id="aboutTitle">A creative perspective.<br>A <em class="serif">practical</em> approach.</h2>
+        </div>
+        <div class="about-copy">
+          <p class="first">I’m Vishwas. I help businesses build recognisable brands and a stronger digital presence.</p>
+          <p>My experience spans brand awareness, Meta Ads, Google Ads and communication across Facebook, Instagram and LinkedIn. I work with creative and technical specialists to connect strategy, content, advertising and interactive websites around a clear business goal.</p>
+          <p>My experience building a brand around Lokal’s posters for Tier 2 and Tier 3 audiences has shaped how I approach regional relevance and everyday engagement. I bring that perspective to projects that need clear messaging, stronger visibility and a practical path from interest to enquiry.</p>
+          <div class="tags"><span class="pill">Strategy</span><span class="pill">Creative</span><span class="pill">Paid media</span><span class="pill">Technology</span></div>
+        </div>
+      </div>
+
+      <div class="caps" id="services">
+        <div class="caps-head"><h3>What I bring to the work.</h3><p>From the first impression to the next enquiry.</p></div>
+        <div class="caps-grid">
+          <article class="cap"><span>01 /</span><h4>Brand strategy &amp; identity</h4><p>Positioning, brand voice and a consistent visual identity that make the business recognisable.</p></article>
+          <article class="cap"><span>02 /</span><h4>Meta &amp; Google Ads</h4><p>Campaign planning, execution and optimisation aligned with awareness, discovery and enquiry goals.</p></article>
+          <article class="cap"><span>03 /</span><h4>Social media management</h4><p>Connected communication across Facebook, Instagram and LinkedIn, with regular content planning.</p></article>
+          <article class="cap"><span>04 /</span><h4>Regional creative communication</h4><p>Visuals and messaging shaped for the language, context and priorities of your markets.</p></article>
+          <article class="cap"><span>05 /</span><h4>Interactive website development</h4><p>Modern, user-friendly websites with clear information, intuitive navigation and purposeful interactions.</p></article>
+          <article class="cap"><span>06 /</span><h4>Measurement &amp; improvement</h4><p>Track agreed signals, review creative and refine activity around what the business needs.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK: horizontal scroll -->
+  <section class="hscroll" id="work" aria-labelledby="workTitle">
+    <div class="hs-sticky">
+      <div class="wrap hs-head">
+        <div>
+          <span class="eyebrow"><b>02</b> Selected work &amp; experience</span>
+          <h2 class="h2" id="workTitle">Different brands. <em class="serif">Purposeful</em> execution.</h2>
+        </div>
+        <p class="lead">Open a project to view its creative, play a video or read the experience and its relevance to your business.</p>
+      </div>
+      <div class="hs-viewport">
+        <div class="hs-track" id="track"><button class="wcard" type="button" data-open="lokal"><span class="wc-img"><img src="assets/w-lokal-festival.webp" alt="" loading="lazy" decoding="async" style="object-position:50% 30%"></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">01</span><span class="wc-tag">BRAND</span></span><span class="wc-bottom"><span class="wc-kicker">My experience · Regional brand building</span><span class="wc-title">Lokal</span><span class="wc-desc">Poster-led brand building for audiences across Tier 2 and Tier 3 India.</span><span class="wc-cta">VIEW PROJECT <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="reelies"><span class="wc-img"><img src="assets/w-reelies.webp" alt="" loading="lazy" decoding="async" style="object-position:30% 50%"></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">02</span><span class="wc-tag">WEB</span></span><span class="wc-bottom"><span class="wc-kicker">Website development · Entertainment</span><span class="wc-title">Reelies</span><span class="wc-desc">A website built from scratch to present shows and connect viewers with the platform.</span><span class="wc-cta">VIEW PROJECT <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="jsw"><span class="wc-img art art-rebar"><small>LAUNCH EXPERIENCE</small><em>A new opening.<br>A new conversation.</em></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">03</span><span class="wc-tag">BRAND</span></span><span class="wc-bottom"><span class="wc-kicker">Grand-opening promotion · Steel</span><span class="wc-title">JSW Steels</span><span class="wc-desc">An opportunity to promote a JSW grand opening and support launch awareness.</span><span class="wc-cta">READ EXPERIENCE <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="tata"><span class="wc-img"><img src="assets/w-tata-poster.webp" alt="" loading="lazy" decoding="async" style="object-position:50% 42%"></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">04</span><span class="wc-tag">CAMPAIGN</span></span><span class="wc-bottom"><span class="wc-kicker">Campaign video · Commercial vehicles</span><span class="wc-title">Tata Motors</span><span class="wc-desc">A concise Tata Azura film that brings the vehicle, brand message and next step together.</span><span class="wc-cta">PLAY VIDEO <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="nissan"><span class="wc-img"><img src="assets/w-nissan-card.webp" alt="" loading="lazy" decoding="async" style="object-position:60% 50%"></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">05</span><span class="wc-tag">CAMPAIGN</span></span><span class="wc-bottom"><span class="wc-kicker">Brand-awareness campaign · Automotive</span><span class="wc-title">Nissan Gravite</span><span class="wc-desc">A pan-India awareness campaign introducing the Gravite and its product story.</span><span class="wc-cta">PLAY VIDEO <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="lic"><span class="wc-img"><img src="assets/w-lic.webp" alt="" loading="lazy" decoding="async" style="object-position:50% 18%"></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">06</span><span class="wc-tag">CAMPAIGN</span></span><span class="wc-bottom"><span class="wc-kicker">Scheme promotion · Insurance</span><span class="wc-title">LIC</span><span class="wc-desc">Regional-language promotion that brings product awareness and enquiry information together.</span><span class="wc-cta">VIEW PROJECT <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="indifeast"><span class="wc-img"><img src="assets/w-indifeast.webp" alt="" loading="lazy" decoding="async" style="object-position:24% 50%"></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">07</span><span class="wc-tag">REGIONAL</span></span><span class="wc-bottom"><span class="wc-kicker">Regional business promotion · Consumer products</span><span class="wc-title">Indifeast</span><span class="wc-desc">Regional brand promotion and distributor-focused business support.</span><span class="wc-cta">VIEW PROJECT <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="wheelsmart"><span class="wc-img art art-wheel"><small>LOCAL BRAND AWARENESS</small><em>Local visibility.<br>Purchase interest.</em></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">08</span><span class="wc-tag">REGIONAL</span></span><span class="wc-bottom"><span class="wc-kicker">Local brand awareness · Scooters &amp; retail</span><span class="wc-title">Wheelsmart</span><span class="wc-desc">An awareness campaign for a local scooter brand, with a positive reported sales response.</span><span class="wc-cta">READ EXPERIENCE <span aria-hidden="true">↗</span></span></span></button>
+<button class="wcard" type="button" data-open="tamil"><span class="wc-img"><img src="assets/w-tamil-poster.webp" alt="" loading="lazy" decoding="async" style="object-position:50% 45%"></span><span class="wc-shade"></span><span class="wc-top"><span class="wc-num">09</span><span class="wc-tag">REGIONAL</span></span><span class="wc-bottom"><span class="wc-kicker">Campaign communication · Public communication</span><span class="wc-title">Tamil political campaign</span><span class="wc-desc">Tamil-language campaign promotion presented through a short video.</span><span class="wc-cta">PLAY VIDEO <span aria-hidden="true">↗</span></span></span></button></div>
+      </div>
+      <div class="wrap">
+        <div class="hs-foot">
+          <div class="hs-progress" aria-hidden="true"><i id="hsBar"></i></div>
+          <span class="hs-count">09 PROJECTS</span>
+        </div>
+        <p class="hs-note" style="margin-top:14px">A mix of project delivery, campaign participation and personal experience. Scope is described within each project; qualitative outcomes are not audited performance figures. <button class="linkbtn" type="button" data-notes>Sources &amp; project notes</button></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVEAL LINE -->
+  <section class="reveal" id="reveal" aria-label="Approach">
+    <div class="reveal-inner wrap">
+      <p id="revealText"><span class="w">Simple</span> <span class="w">visuals,</span> <span class="w"><em class="serif">familiar</em></span> <span class="w">occasions</span> <span class="w">and</span> <span class="w">a</span> <span class="w">recognisable</span> <span class="w">identity</span> <span class="w">give</span> <span class="w">people</span> <span class="w">a</span> <span class="w">reason</span> <span class="w">to</span> <span class="w">notice</span> <span class="w">and</span> <span class="w">engage.</span></p>
+    </div>
+  </section>
+
+  <!-- REGIONAL -->
+  <section class="section" id="regional" aria-labelledby="regTitle">
+    <div class="wrap reg-grid">
+      <div class="reg-copy">
+        <span class="eyebrow"><b>03</b> Regional understanding · Lokal experience</span>
+        <h2 class="h2" id="regTitle">Familiar language.<br>Everyday relevance.<br><em class="serif">Stronger recognition.</em></h2>
+        <p class="lead">My experience building a poster-led brand for Tier 2 and Tier 3 audiences brings an understanding of communication that feels local.</p>
+        <div class="values">
+          <div><strong>Regional relevance</strong><span>Language and context people understand.</span></div>
+          <div><strong>Everyday moments</strong><span>Wishes, occasions and useful communication.</span></div>
+          <div><strong>Brand familiarity</strong><span>A consistent identity across touchpoints.</span></div>
+        </div>
+        <div class="btns"><button class="btn btn-ghost glass" type="button" data-open="lokal">Explore the Lokal experience <span class="arr" aria-hidden="true">↗</span></button></div>
+      </div>
+      <div>
+        <div class="phones">
+          <button class="phone glass" type="button" data-open="lokal" data-media="0" aria-label="View Lokal everyday poster screenshot"><img src="assets/w-lokal-daily.webp" alt="Lokal everyday good-morning poster screenshot" loading="lazy" width="333" height="592"></button>
+          <button class="phone glass" type="button" data-open="lokal" data-media="1" aria-label="View Lokal festival poster screenshot"><img src="assets/w-lokal-festival.webp" alt="Lokal festival poster screenshot" loading="lazy" width="333" height="592"></button>
+          <button class="phone glass" type="button" data-open="lokal" data-media="2" aria-label="View Lokal Indian-language screenshot"><img src="assets/w-lokal-languages.webp" alt="Lokal Indian-language support screenshot" loading="lazy" width="333" height="592"></button>
+        </div>
+        <p class="src"><strong>Product reference:</strong> official Lokal app screenshots · <a href="https://play.google.com/store/apps/details?hl=en&amp;id=get.lokal.localnews" target="_blank" rel="noopener noreferrer">Google Play ↗</a><br>Public product context, captured 20 Oct 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TMT: stacking cards -->
+  <section class="section" id="tmt" aria-labelledby="tmtTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow"><b>04</b> Proposed direction for your business</span>
+          <h2 class="h2" id="tmtTitle">Build trust in the brand.<br>Make <em class="serif">enquiry</em> easy.</h2>
+        </div>
+        <p class="lead">A connected branding and digital approach for a TMT steel business, shaped around its products, operating markets and dealer network.</p>
+      </div>
+
+      <div class="stack" id="stack"><article class="scard" style="--i:0"><div class="sc-copy"><div class="sc-step"><span><b>01</b> / Brand identity</span><span>Proposed direction</span></div><div><h3>Make the strength of your brand clear.</h3><p>Establish a recognisable identity and a clear brand voice. Turn your product strengths, manufacturing story and approved technical information into communication customers and trade partners can understand.</p><ul><li>A consistent visual direction and messaging system</li><li>Product stories grounded in facts supplied by your team</li><li>Clear communication across corporate and dealer touchpoints</li></ul></div></div><div class="sc-visual" style="background-image:linear-gradient(rgba(7,6,10,.35),rgba(7,6,10,.6)),url('assets/s-identity.webp')"><span class="sc-tag">Illustrative · brand touchpoints</span><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false"><defs><radialGradient id="hubG"><stop offset="0" stop-color="#ff7a3d" stop-opacity=".55"/><stop offset="1" stop-color="#ff7a3d" stop-opacity=".08"/></radialGradient></defs><path class="v-line v-dash" d="M200 152 L200.0 48.0"/><path class="v-line v-dash" d="M200 152 L317.3 87.2"/><path class="v-line v-dash" d="M200 152 L346.2 175.1"/><path class="v-line v-dash" d="M200 152 L265.1 245.7"/><path class="v-line v-dash" d="M200 152 L134.9 245.7"/><path class="v-line v-dash" d="M200 152 L53.8 175.1"/><path class="v-line v-dash" d="M200 152 L82.7 87.2"/><circle class="packet" cx="200" cy="152" r="3.2" fill="#ff7a3d"><animateMotion dur="2.6s" begin="0.00s" repeatCount="indefinite" path="M0 0 L0.0 -104.0"/></circle><circle class="packet" cx="200" cy="152" r="3.2" fill="#a58bff"><animateMotion dur="2.6s" begin="0.37s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear" path="M0 0 L117.3 -64.8"/></circle><circle class="packet" cx="200" cy="152" r="3.2" fill="#ff7a3d"><animateMotion dur="2.6s" begin="0.74s" repeatCount="indefinite" path="M0 0 L146.2 23.1"/></circle><circle class="packet" cx="200" cy="152" r="3.2" fill="#a58bff"><animateMotion dur="2.6s" begin="1.11s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear" path="M0 0 L65.1 93.7"/></circle><circle class="packet" cx="200" cy="152" r="3.2" fill="#ff7a3d"><animateMotion dur="2.6s" begin="1.48s" repeatCount="indefinite" path="M0 0 L-65.1 93.7"/></circle><circle class="packet" cx="200" cy="152" r="3.2" fill="#a58bff"><animateMotion dur="2.6s" begin="1.85s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear" path="M0 0 L-146.2 23.1"/></circle><circle class="packet" cx="200" cy="152" r="3.2" fill="#ff7a3d"><animateMotion dur="2.6s" begin="2.22s" repeatCount="indefinite" path="M0 0 L-117.3 -64.8"/></circle><circle class="hub-ring" cx="200" cy="152" r="38" fill="none" stroke="#ff7a3d" stroke-opacity=".6"/><circle cx="200" cy="152" r="38" fill="url(#hubG)" stroke="#ff7a3d" stroke-opacity=".85"/><circle cx="200" cy="152" r="30" fill="#120f18" fill-opacity=".7"/><text class="v-txt" x="200" y="150" text-anchor="middle" style="fill:var(--text);font-size:10px">YOUR</text><text class="v-txt" x="200" y="163" text-anchor="middle" style="fill:var(--text);font-size:10px">BRAND</text><g class="fade" style="--d:0.15s"><rect class="v-pill hot" x="165.6" y="36.0" width="68.8" height="24" rx="12"/><text class="v-txt" x="200.0" y="51.5" text-anchor="middle">Dealers</text></g><g class="fade" style="--d:0.23s"><rect class="v-pill" x="282.9" y="75.2" width="68.8" height="24" rx="12"/><text class="v-txt" x="317.3" y="90.7" text-anchor="middle">Website</text></g><g class="fade" style="--d:0.31s"><rect class="v-pill" x="305.4" y="163.1" width="81.6" height="24" rx="12"/><text class="v-txt" x="346.2" y="178.6" text-anchor="middle">Instagram</text></g><g class="fade" style="--d:0.39s"><rect class="v-pill" x="227.5" y="233.7" width="75.2" height="24" rx="12"/><text class="v-txt" x="265.1" y="249.2" text-anchor="middle">Facebook</text></g><g class="fade" style="--d:0.47s"><rect class="v-pill" x="97.3" y="233.7" width="75.2" height="24" rx="12"/><text class="v-txt" x="134.9" y="249.2" text-anchor="middle">LinkedIn</text></g><g class="fade" style="--d:0.55s"><rect class="v-pill" x="19.4" y="163.1" width="68.8" height="24" rx="12"/><text class="v-txt" x="53.8" y="178.6" text-anchor="middle">Outlets</text></g><g class="fade" style="--d:0.63s"><rect class="v-pill" x="41.9" y="75.2" width="81.6" height="24" rx="12"/><text class="v-txt" x="82.7" y="90.7" text-anchor="middle">Catalogue</text></g></svg></div><div class="sc-dim" aria-hidden="true"></div></article>
+<article class="scard" style="--i:1"><div class="sc-copy"><div class="sc-step"><span><b>02</b> / Digital presence</span><span>Proposed direction</span></div><div><h3>Be familiar in the markets that matter.</h3><p>Manage Facebook, Instagram and LinkedIn with a connected content approach. Combine product education, company stories and regional creatives that keep your brand recognisable.</p><ul><li>Connected content planning across social channels</li><li>Regional-language creatives for your business markets</li><li>Dealer highlights, milestones and useful product information</li></ul></div></div><div class="sc-visual" style="background-image:linear-gradient(rgba(7,6,10,.35),rgba(7,6,10,.6)),url('assets/s-presence.webp')"><span class="sc-tag">Illustrative · content rhythm</span><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false"><defs><linearGradient id="areaG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a58bff" stop-opacity=".38"/><stop offset="1" stop-color="#a58bff" stop-opacity="0"/></linearGradient><linearGradient id="lineG" x1="0" x2="1"><stop offset="0" stop-color="#a58bff"/><stop offset="1" stop-color="#ff7a3d"/></linearGradient></defs><path class="v-line" stroke-opacity=".5" d="M40 236.0 H360"/><path class="v-line" stroke-opacity=".5" d="M40 193.0 H360"/><path class="v-line" stroke-opacity=".5" d="M40 150.0 H360"/><path class="v-line" stroke-opacity=".5" d="M40 107.0 H360"/><path class="v-line" stroke-opacity=".5" d="M40 64.0 H360"/><text class="v-txt v-muted" x="40.0" y="258" text-anchor="middle" style="font-size:9px">W1</text><text class="v-txt v-muted" x="146.7" y="258" text-anchor="middle" style="font-size:9px">W4</text><text class="v-txt v-muted" x="253.3" y="258" text-anchor="middle" style="font-size:9px">W7</text><text class="v-txt v-muted" x="360.0" y="258" text-anchor="middle" style="font-size:9px">W10</text><path class="fade" style="--d:.9s" d="M40.0 201.6 C45.9 199.4 63.7 189.8 75.6 188.7 C87.4 187.6 99.3 198.0 111.1 195.2 C123.0 192.3 134.8 177.6 146.7 171.5 C158.5 165.4 170.4 159.7 182.2 158.6 C194.1 157.5 205.9 168.6 217.8 165.1 C229.6 161.5 241.5 143.9 253.3 137.1 C265.2 130.3 277.0 129.2 288.9 124.2 C300.7 119.2 312.6 114.9 324.4 107.0 C336.3 99.1 354.1 81.9 360.0 76.9 L360 236 L40 236 Z" fill="url(#areaG)"/><path class="draw" pathLength="1" d="M40.0 201.6 C45.9 199.4 63.7 189.8 75.6 188.7 C87.4 187.6 99.3 198.0 111.1 195.2 C123.0 192.3 134.8 177.6 146.7 171.5 C158.5 165.4 170.4 159.7 182.2 158.6 C194.1 157.5 205.9 168.6 217.8 165.1 C229.6 161.5 241.5 143.9 253.3 137.1 C265.2 130.3 277.0 129.2 288.9 124.2 C300.7 119.2 312.6 114.9 324.4 107.0 C336.3 99.1 354.1 81.9 360.0 76.9" fill="none" stroke="url(#lineG)" stroke-width="2.5" stroke-linecap="round"/><g class="fade" style="--d:1.5s"><circle cx="360.0" cy="76.9" r="10" fill="#ff7a3d" fill-opacity=".18"/><circle cx="360.0" cy="76.9" r="4.5" fill="#ff7a3d"/><rect class="v-pill hot" x="184.0" y="61.9" width="156" height="28" rx="14"/><text class="v-txt" x="262.0" y="79.9" text-anchor="middle" style="fill:var(--text)">Always-on · 3 channels</text></g></svg></div><div class="sc-dim" aria-hidden="true"></div></article>
+<article class="scard" style="--i:2"><div class="sc-copy"><div class="sc-step"><span><b>03</b> / Meta &amp; Google Ads</span><span>Proposed direction</span></div><div><h3>Connect attention with business opportunities.</h3><p>Use Meta Ads and Google Ads to support awareness, product discovery and enquiries. Align messages with business priorities, then use performance insights to improve creative and media allocation.</p><ul><li>Awareness campaigns with clear communication goals</li><li>Search campaigns around relevant product and dealer intent</li><li>Enquiry tracking and creative improvement against agreed measures</li></ul></div></div><div class="sc-visual" style="background-image:linear-gradient(rgba(7,6,10,.35),rgba(7,6,10,.6)),url('assets/s-ads.webp')"><span class="sc-tag">Illustrative · budget pacing</span><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false"><defs><linearGradient id="gaugeG" x1="0" x2="1"><stop offset="0" stop-color="#ff7a3d"/><stop offset="1" stop-color="#a58bff"/></linearGradient></defs><path class="v-line" d="M66.0 190.0 L56.0 190.0"/><path class="v-line" d="M72.6 148.6 L66.9 146.7"/><path class="v-line" d="M91.6 111.2 L86.7 107.7"/><path class="v-line" d="M121.2 81.6 L117.7 76.7"/><path class="v-line" d="M158.6 62.6 L156.7 56.9"/><path class="v-line" d="M200.0 56.0 L200.0 46.0"/><path class="v-line" d="M241.4 62.6 L243.3 56.9"/><path class="v-line" d="M278.8 81.6 L282.3 76.7"/><path class="v-line" d="M308.4 111.2 L313.3 107.7"/><path class="v-line" d="M327.4 148.6 L333.1 146.7"/><path class="v-line" d="M334.0 190.0 L344.0 190.0"/><path d="M82 190 A118 118 0 0 1 318 190" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="14" stroke-linecap="round"/><path class="gauge-val" pathLength="100" d="M82 190 A118 118 0 0 1 318 190" fill="none" stroke="url(#gaugeG)" stroke-width="14" stroke-linecap="round"/><text x="200" y="176" text-anchor="middle" data-count="72" style="font:500 46px var(--sans);letter-spacing:-2px;fill:var(--text)">72%</text><text class="v-txt v-muted" x="200" y="202" text-anchor="middle" style="font-size:9.5px;letter-spacing:1.2px">BUDGET PACED · MONTHLY CAP</text><text class="v-txt v-muted" x="82" y="216" text-anchor="middle" style="font-size:9px">0</text><text class="v-txt v-muted" x="318" y="216" text-anchor="middle" style="font-size:9px">100</text><rect class="v-pill" x="64.1" y="238" width="66.4" height="26" rx="13"/><text class="v-txt" x="97.3" y="255" text-anchor="middle">META<tspan style="fill:var(--ok)"> ✓</tspan></text><rect class="v-pill" x="138.5" y="238" width="79.6" height="26" rx="13"/><text class="v-txt" x="178.3" y="255" text-anchor="middle">SEARCH<tspan style="fill:var(--ok)"> ✓</tspan></text><rect class="v-pill" x="226.1" y="238" width="109.8" height="26" rx="13"/><text class="v-txt" x="281.0" y="255" text-anchor="middle">REVIEW WEEKLY</text></svg></div><div class="sc-dim" aria-hidden="true"></div></article>
+<article class="scard" style="--i:3"><div class="sc-copy"><div class="sc-step"><span><b>04</b> / Website &amp; enquiries</span><span>Proposed direction</span></div><div><h3>Give every interested buyer a clear next step.</h3><p>Develop an interactive, mobile-friendly website with clear product information and straightforward routes to contact your team, explore dealership opportunities or find a dealer where information is available.</p><ul><li>A company story, product catalogue and approved proof points</li><li>Enquiry forms and dealership contact journeys</li><li>Mobile-friendly navigation and useful interaction</li></ul></div></div><div class="sc-visual" style="background-image:linear-gradient(rgba(7,6,10,.35),rgba(7,6,10,.6)),url('assets/s-website.webp')"><span class="sc-tag">Illustrative · enquiry journey</span><svg viewBox="0 0 400 300" aria-hidden="true" focusable="false"><text class="v-txt" x="22" y="69.5">Visit</text><path class="v-line" stroke-opacity=".45" d="M104 66 H374"/><rect class="bar" style="--d:0.10s" x="104.0" y="59" width="86.4" height="14" rx="7" fill="#ff7a3d" fill-opacity=".85"/><text class="v-txt" x="22" y="107.5">Product</text><path class="v-line" stroke-opacity=".45" d="M104 104 H374"/><rect class="bar" style="--d:0.22s" x="158.0" y="97" width="91.8" height="14" rx="7" fill="#a58bff" fill-opacity=".85"/><text class="v-txt" x="22" y="145.5">Dealer</text><path class="v-line" stroke-opacity=".45" d="M104 142 H374"/><rect class="bar" style="--d:0.34s" x="217.4" y="135" width="75.6" height="14" rx="7" fill="#ff5c8c" fill-opacity=".85"/><text class="v-txt" x="22" y="183.5">Enquiry</text><path class="v-line" stroke-opacity=".45" d="M104 180 H374"/><rect class="bar" style="--d:0.46s" x="266.0" y="173" width="70.2" height="14" rx="7" fill="#ff7a3d" fill-opacity=".85"/><text class="v-txt" x="22" y="221.5">Call back</text><path class="v-line" stroke-opacity=".45" d="M104 218 H374"/><rect class="bar" style="--d:0.58s" x="314.6" y="211" width="59.4" height="14" rx="7" fill="#7be3a6" fill-opacity=".85"/><path class="v-line" d="M104 250 H374"/><text class="v-txt v-muted" x="104" y="268" style="font-size:9px">first visit</text><text class="v-txt v-muted" x="374" y="268" text-anchor="end" style="font-size:9px">call back</text><g class="scrub"><path d="M104 44 V250" stroke="#fff" stroke-width="1.5"/><circle cx="104" cy="44" r="5" fill="#fff"/><circle cx="104" cy="44" r="10" fill="#fff" fill-opacity=".15"/></g></svg></div><div class="sc-dim" aria-hidden="true"></div></article></div>
+
+      <div class="measure">
+        <strong>What I would measure</strong>
+        <ul><li class="pill">Brand visibility</li><li class="pill">Meaningful engagement</li><li class="pill">Website actions</li><li class="pill">Dealer interest</li><li class="pill">Qualified enquiries</li></ul>
+        <p>Priorities and measures agreed around your business goals.</p>
+      </div>
+
+      <ol class="approach" aria-label="Working approach">
+        <li><b>01</b><h3>Understand</h3><p>Products, positioning, markets and the dealer journey.</p></li>
+        <li><b>02</b><h3>Create</h3><p>A connected brand story, content and digital experience.</p></li>
+        <li><b>03</b><h3>Launch</h3><p>Coordinated activity across the channels that matter.</p></li>
+        <li><b>04</b><h3>Improve</h3><p>Review response, share learnings and refine the work.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-labelledby="statsTitle">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="sparkGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="200" y2="0"><stop offset="0" stop-color="#ff7a3d"/><stop offset="1" stop-color="#a58bff"/></linearGradient></defs></svg>
+    <div class="wrap">
+      <div class="stats-head"><h2 id="statsTitle">The portfolio at a glance.</h2><span class="eyebrow">Counts from the work shown</span></div>
+      <div class="stats-grid"><div class="stat glass"><div class="stat-num" data-to="9">09</div><div class="stat-label">Selected projects</div><div class="stat-sub">Brand, web, campaign and regional work</div><svg class="spark" viewBox="0 0 200 30" aria-hidden="true"><path class="sl" pathLength="1" d="M4 15 H196"/><circle cx="4.0" cy="15" r="3.2" style="--d:0.25s"/><circle cx="28.0" cy="15" r="3.2" style="--d:0.37s"/><circle cx="52.0" cy="15" r="3.2" style="--d:0.49s"/><circle cx="76.0" cy="15" r="3.2" style="--d:0.61s"/><circle cx="100.0" cy="15" r="3.2" style="--d:0.73s"/><circle cx="124.0" cy="15" r="3.2" style="--d:0.85s"/><circle cx="148.0" cy="15" r="3.2" style="--d:0.97s"/><circle cx="172.0" cy="15" r="3.2" style="--d:1.09s"/><circle cx="196.0" cy="15" r="3.2" style="--d:1.21s"/></svg></div>
+<div class="stat glass"><div class="stat-num" data-to="8">08</div><div class="stat-label">Brands in the work</div><div class="stat-sub">From steel and automotive to entertainment</div><svg class="spark" viewBox="0 0 200 30" aria-hidden="true"><path class="sl" pathLength="1" d="M4 15 H196"/><circle cx="4.0" cy="15" r="3.2" style="--d:0.25s"/><circle cx="31.4" cy="15" r="3.2" style="--d:0.37s"/><circle cx="58.9" cy="15" r="3.2" style="--d:0.49s"/><circle cx="86.3" cy="15" r="3.2" style="--d:0.61s"/><circle cx="113.7" cy="15" r="3.2" style="--d:0.73s"/><circle cx="141.1" cy="15" r="3.2" style="--d:0.85s"/><circle cx="168.6" cy="15" r="3.2" style="--d:0.97s"/><circle cx="196.0" cy="15" r="3.2" style="--d:1.09s"/></svg></div>
+<div class="stat glass"><div class="stat-num" data-to="6">06</div><div class="stat-label">Core capabilities</div><div class="stat-sub">Strategy, ads, social, regional, web, measurement</div><svg class="spark" viewBox="0 0 200 30" aria-hidden="true"><path class="sl" pathLength="1" d="M4 15 H196"/><circle cx="4.0" cy="15" r="3.2" style="--d:0.25s"/><circle cx="42.4" cy="15" r="3.2" style="--d:0.37s"/><circle cx="80.8" cy="15" r="3.2" style="--d:0.49s"/><circle cx="119.2" cy="15" r="3.2" style="--d:0.61s"/><circle cx="157.6" cy="15" r="3.2" style="--d:0.73s"/><circle cx="196.0" cy="15" r="3.2" style="--d:0.85s"/></svg></div>
+<div class="stat glass"><div class="stat-num" data-to="3">03</div><div class="stat-label">Social channels</div><div class="stat-sub">Facebook, Instagram and LinkedIn</div><svg class="spark" viewBox="0 0 200 30" aria-hidden="true"><path class="sl" pathLength="1" d="M4 15 H196"/><circle cx="4.0" cy="15" r="3.2" style="--d:0.25s"/><circle cx="100.0" cy="15" r="3.2" style="--d:0.37s"/><circle cx="196.0" cy="15" r="3.2" style="--d:0.49s"/></svg></div></div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTACT -->
+  <section class="cta-sec" id="contact" aria-labelledby="ctaTitle">
+    <div class="wrap">
+      <div class="cta glass">
+        <span class="eyebrow"><b>05</b> Let’s build the next chapter</span>
+        <h2 class="h2" id="ctaTitle">A stronger presence. A clearer <em class="serif">path</em> to growth.</h2>
+        <p class="lead">Tell me what you’re planning. Share your product story and market priorities, and I’ll bring together strategy, creative thinking and technical support to move the work forward.</p>
+        <div class="btns">
+          <a class="btn btn-light" href="tel:+917026365898">Call me <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost glass" href="mailto:vishwasputtu108@gmail.com">Email me</a>
+        </div>
+        <address class="contacts" style="font-style:normal">
+          <div class="cdet"><small>Phone</small><a href="tel:+917026365898">+91-7026365898</a><button class="copy" type="button" data-copy="+91-7026365898" aria-label="Copy phone number">Copy</button></div>
+          <div class="cdet"><small>Email</small><a href="mailto:vishwasputtu108@gmail.com">vishwasputtu108<wbr>@gmail.com</a><button class="copy" type="button" data-copy="vishwasputtu108@gmail.com" aria-label="Copy email address">Copy</button></div>
+        </address>
+        <div class="nextc"><span>The next conversation</span><span class="pill">Priority markets</span><span class="pill">Products &amp; positioning</span><span class="pill">Dealer opportunities</span><span class="pill">Scope, budget &amp; success measures</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="logo" href="#top"><span class="logo-ring" aria-hidden="true"></span>Vishwas</a>
+        <p>Personal portfolio · Marketing, branding &amp; digital. Brand building, regional storytelling, paid media and digital experiences.</p>
+        <span class="pill-live"><i aria-hidden="true"></i>Open to new projects</span>
+      </div>
+      <div class="f-col"><h4>Explore</h4><ul><li><a href="#about">About me</a></li><li><a href="#work">Selected work</a></li><li><a href="#regional">Regional expertise</a></li><li><a href="#tmt">For your TMT brand</a></li><li><a href="#contact">Contact</a></li></ul></div>
+      <div class="f-col"><h4>Work</h4><ul><li><button type="button" data-open="lokal">Lokal</button></li><li><button type="button" data-open="reelies">Reelies</button></li><li><button type="button" data-open="jsw">JSW Steels</button></li><li><button type="button" data-open="tata">Tata Motors</button></li><li><button type="button" data-open="nissan">Nissan Gravite</button></li></ul></div>
+      <div class="f-col"><h4>More work</h4><ul><li><button type="button" data-open="lic">LIC</button></li><li><button type="button" data-open="indifeast">Indifeast</button></li><li><button type="button" data-open="wheelsmart">Wheelsmart</button></li><li><button type="button" data-open="tamil">Tamil campaign</button></li></ul></div>
+      <div class="f-col"><h4>Contact</h4><ul><li><a href="tel:+917026365898">+91-7026365898</a></li><li><a href="mailto:vishwasputtu108@gmail.com">Email Vishwas</a></li><li><button type="button" data-notes>Sources &amp; notes</button></li><li><a href="#top">Back to top ↑</a></li></ul></div>
+    </div>
+    <svg class="wordmark" viewBox="0 0 1200 230" aria-hidden="true" focusable="false">
+      <defs><linearGradient id="wmGrad" x1="0" x2="1"><stop offset="0" stop-color="#ff7a3d"/><stop offset=".5" stop-color="#a58bff"/><stop offset="1" stop-color="#ff7a3d"/></linearGradient></defs>
+      <text class="wm wm-base" x="600" y="200" text-anchor="middle">vishwas</text>
+      <text class="wm wm-dots" x="600" y="200" text-anchor="middle">vishwas</text>
+      <text class="wm wm-run" x="600" y="200" text-anchor="middle">vishwas</text>
+    </svg>
+    <div class="f-bottom"><span>© 2026 Vishwas. All rights reserved.</span><span>Brand names identify the work shown; no endorsement is implied.</span></div>
+  </div>
+</footer>
+
+<!-- Project dialog -->
+<dialog class="pdialog" id="pdialog" aria-labelledby="pdBrand">
+  <div class="pd-top">
+    <div><span class="eyebrow" id="pdCat"></span><strong id="pdBrand"></strong></div>
+    <div class="pd-tools">
+      <button class="ibtn" type="button" id="pdPrev" aria-label="Previous project">←</button>
+      <button class="ibtn" type="button" id="pdNext" aria-label="Next project">→</button>
+      <button class="ibtn" type="button" id="pdClose" data-close aria-label="Close project">×</button>
+    </div>
+  </div>
+  <div class="pd-body">
+    <div class="pd-media">
+      <div class="pd-stage" id="pdStage"></div>
+      <p class="pd-caption" id="pdCaption"></p>
+      <div class="pd-row"><div class="pd-tabs" id="pdTabs" role="group" aria-label="Project media"></div><span id="pdOpen"></span></div>
+    </div>
+    <div class="pd-detail">
+      <span class="pill" id="pdSector" style="align-self:flex-start"></span>
+      <h2 id="pdTitle"></h2>
+      <p id="pdSummary"></p>
+      <dl class="pd-facts" id="pdFacts"></dl>
+      <p class="pd-insight" id="pdInsight"></p>
+      <p class="pd-note" id="pdNote"></p>
+      <div class="pd-links" id="pdLinks"></div>
+    </div>
+  </div>
+</dialog>
+
+<!-- Notes dialog -->
+<dialog class="ndialog" id="ndialog" aria-labelledby="nTitle">
+  <div class="pd-top"><strong id="nTitle" style="margin:0">Sources &amp; project notes</strong><button class="ibtn" type="button" id="nClose" data-close aria-label="Close project notes">×</button></div>
+  <div class="n-body">
+    <p>This portfolio organises the experience and references provided by Vishwas. Project context and creative content were reviewed on 20 Oct 2026. These notes keep project scope, public references and unresolved source details clear.</p>
+    <ul class="n-list"><li><strong>Lokal</strong><p>Official Google Play screenshots provide product context. Vishwas’s contribution is described as personal experience, without attributing app-wide usage figures or the current screenshot artwork to him.</p></li><li><strong>Reelies</strong><p>Website-development scope comes from Vishwas’s account. The live homepage was visually inspected on 20 Oct 2026. The Meta ad link is preserved as an external reference; delivery and performance were not independently reviewed.</p></li><li><strong>JSW Steels</strong><p>The original link supplied under JSW opens a Tamil political video. It is not shown in the JSW case. Internet research did not identify a matching event, so the city remains unconfirmed.</p></li><li><strong>Tata Motors</strong><p>The replacement Tata Azura video was supplied by Vishwas on 20 Oct 2026. It replaces the earlier Tata Intra still. The video is included directly in the portfolio.</p></li><li><strong>Indifeast</strong><p>Vishwas describes Karnataka distributor work. The supplied artwork explicitly identifies a Hyderabad retail promotion; those scopes are kept distinct.</p></li><li><strong>Wheelsmart &amp; Nissan</strong><p>Positive campaign response is qualitative information provided by Vishwas. Budgets, dates, verified sales uplift, reach and ROAS have not been supplied.</p></li><li><strong>All work</strong><p>This portfolio presents selected projects and personal experience. Brand names identify the examples shown; no exclusive relationship, corporate endorsement or specific authorship beyond the stated scope is implied. Historical creatives may contain dated offers. The flow window, charts and gauge in the hero and proposal sections are illustrations, not client data.</p></li></ul>
+    <h3>Original references</h3>
+    <div class="n-refs"><a href="https://play.google.com/store/apps/details?hl=en&amp;id=get.lokal.localnews" target="_blank" rel="noopener noreferrer">Lokal: Official app &amp; screenshots ↗</a><a href="https://www.lokalapps.com/" target="_blank" rel="noopener noreferrer">Lokal: Company website ↗</a><a href="https://reeliesdrama.com/" target="_blank" rel="noopener noreferrer">Reelies: Website ↗</a><a href="https://www.facebook.com/ads/library/?id=4075818159218604" target="_blank" rel="noopener noreferrer">Reelies: Meta ad reference ↗</a><a href="https://drive.google.com/file/d/1pftKKCKBFqgyZzj8ElAQ5Uxq8bgjp-1N/view" target="_blank" rel="noopener noreferrer">Nissan Gravite: Original video ↗</a><a href="https://drive.google.com/file/d/1XkdcU5K5xhIOgvok3AHKr5mLN9dRHKHK/view" target="_blank" rel="noopener noreferrer">LIC: Original creative ↗</a><a href="https://drive.google.com/file/d/14o-j-MuTy0U0t7kkT7j8OIIZAqMS3owm/view" target="_blank" rel="noopener noreferrer">Indifeast: Original creative ↗</a><a href="https://drive.google.com/file/d/1s3pn_G1qjr1OGoTY7N__GxE6wZz1zmRK/view" target="_blank" rel="noopener noreferrer">Tamil political campaign: Original video ↗</a><a href="https://drive.google.com/file/d/1Vy1KbMKPzuaKoJNTXtHdqd1KiWG-4MeN/view" target="_blank" rel="noopener noreferrer">Original link supplied under JSW (contains political material) ↗</a></div>
+    <p style="font-size:12.5px;color:var(--muted)">Screenshots and campaign artwork remain attributed to their respective sources. Campaign films and images are included with this portfolio. External references require internet access.</p>
+  </div>
+</dialog>
+
+<script id="project-data" type="application/json">[{"id":"lokal","name":"Lokal","label":"My experience","sector":"Regional brand building","category":"brand","number":"01","headline":"A brand that belongs in everyday life.","short":"Poster-led brand building for audiences across Tier 2 and Tier 3 India.","summary":"My experience with Lokal includes building a strong brand around posters for Tier 2 and Tier 3 audiences. It shaped my understanding of communication that feels familiar, relevant and easy to share.","facts":[["Experience","Poster-led brand building"],["Audience","Tier 2 & Tier 3 India"],["Creative context","Everyday wishes, festivals and Indian languages"]],"insight":"For your TMT brand: bring the same regional understanding to product stories, dealer communication and a consistent local presence.","note":"Official product screenshots illustrate the Lokal experience. They are not examples of campaign results or a claim of authorship of these specific screens.","media":[{"type":"image","label":"Everyday posters","caption":"Everyday status content · Official Lokal app screenshot","src":"assets/w-lokal-daily.webp"},{"type":"image","label":"Festival posters","caption":"Festival wishes · Official Lokal app screenshot","src":"assets/w-lokal-festival.webp"},{"type":"image","label":"Indian languages","caption":"Regional-language product experience · Official Lokal app screenshot","src":"assets/w-lokal-languages.webp"}],"sources":[{"label":"Official app & screenshots","url":"https://play.google.com/store/apps/details?hl=en&id=get.lokal.localnews"},{"label":"Lokal company website","url":"https://www.lokalapps.com/"}]},{"id":"reelies","name":"Reelies","label":"Website development","sector":"Entertainment","category":"web","number":"02","headline":"From a show catalogue to a digital destination.","short":"A website built from scratch to present shows and connect viewers with the platform.","summary":"I worked with the technical team to build the Reelies website from the ground up to give its short-drama shows an organised home online. The live interface brings together show discovery, search, account access and routes to the app.","facts":[["Project scope","Website development from scratch"],["Live experience","Featured shows, series catalogue and search"],["Viewer journeys","Browse shows, sign in and find the app"]],"insight":"For your TMT brand: a clear product catalogue, credible company story and simple enquiry journeys can work together in one digital home.","note":"Website captured on 20 Oct 2026. The supplied Meta Ads Library link is included as a reference; its creative and delivery results could not be independently reviewed.","media":[{"type":"image","label":"Website preview","caption":"Live Reelies homepage · Captured 20 Oct 2026","src":"assets/w-reelies.webp"},{"type":"link","label":"Live website","url":"https://reeliesdrama.com/","title":"Explore Reelies","text":"Open the live website to browse its show catalogue and digital experience.","button":"Visit the website"},{"type":"link","label":"Ad reference","url":"https://www.facebook.com/ads/library/?id=4075818159218604","title":"Meta Ads Library","text":"The original ad reference supplied with this project. Availability may depend on Meta and the ad’s current status.","button":"Open ad reference"}],"sources":[{"label":"Reelies website","url":"https://reeliesdrama.com/"},{"label":"Meta ad reference","url":"https://www.facebook.com/ads/library/?id=4075818159218604"}]},{"id":"jsw","name":"JSW Steels","label":"Grand-opening promotion","sector":"Steel","category":"brand","number":"03","headline":"Helping a new opening get noticed.","short":"An opportunity to promote a JSW grand opening and support launch awareness.","summary":"I had the opportunity to promote a JSW Steels grand opening, supporting awareness around the launch. This experience adds relevant context for communicating a steel brand’s presence and new market touchpoints.","facts":[["Experience","Grand-opening promotion"],["Communication focus","Launch awareness and brand visibility"],["Sector relevance","Steel and local market presence"]],"insight":"For your TMT brand: turn new outlets, dealer touchpoints and brand milestones into focused opportunities for visibility.","note":"Based on my project experience. The event city and matching opening media are still to be confirmed, so no location or event image is attributed here.","media":[{"type":"summary","label":"Project overview","title":"A new opening.\nA stronger presence.","text":"JSW Steels · Grand-opening promotion","caption":"Project experience summary"}],"sources":[]},{"id":"tata","name":"Tata Motors","label":"Campaign video","sector":"Commercial vehicles","category":"campaign","number":"04","headline":"A product story built to move.","short":"A concise Tata Azura film that brings the vehicle, brand message and next step together.","summary":"This Tata Motors campaign sample introduces the Tata Azura through a short product film. Vehicle visuals, the brand message and a clear “Know More” prompt give the communication a focused, easy-to-follow sequence.","facts":[["Product","Tata Azura commercial vehicle"],["Featured asset","10-second vertical campaign film"],["Visible execution","Vehicle visuals, brand message and “Know More” prompt"]],"insight":"For your TMT brand: concise product stories can make key strengths easier to understand and give interested buyers a clear next step.","note":"Replacement campaign video supplied by Vishwas on 20 Oct 2026. Campaign performance and specific creative-production responsibilities were not supplied.","media":[{"type":"video","label":"Campaign video","caption":"Tata Azura · Supplied 10-second campaign film","src":"assets/v-tata.mp4","poster":"assets/w-tata-poster.webp"}],"sources":[]},{"id":"nissan","name":"Nissan Gravite","label":"Brand-awareness campaign","sector":"Automotive","category":"campaign","number":"05","headline":"Short-form storytelling for a wider launch.","short":"A pan-India awareness campaign introducing the Gravite and its product story.","summary":"I supported a pan-India brand-awareness campaign for Nissan Gravite. The supplied short video moves through exterior and cabin views, highlights flexible seating and ends with a direct “Know More” prompt.","facts":[["Campaign scope","Pan-India awareness"],["Featured asset","10-second product video"],["Product story","Modular seating and three rows"]],"insight":"For your TMT brand: concise product videos can introduce important features and lead viewers towards more information.","note":"Campaign geography and positive response are based on Vishwas’s account. No reach, sales or ROAS figures were supplied. Any offer displayed is part of the historical creative.","media":[{"type":"video","label":"Play campaign","caption":"Nissan Gravite · Full supplied 10-second video","src":"assets/v-nissan.mp4","poster":"assets/w-nissan-poster.webp"}],"sources":[{"label":"Original video","url":"https://drive.google.com/file/d/1pftKKCKBFqgyZzj8ElAQ5Uxq8bgjp-1N/view"}]},{"id":"lic","name":"LIC","label":"Scheme promotion","sector":"Insurance","category":"campaign","number":"06","headline":"Making trust easier to understand.","short":"Regional-language promotion that brings product awareness and enquiry information together.","summary":"I supported awareness for LIC schemes through regional communication. The supplied Telugu Protection Plus creative combines family-focused imagery, a clear product identity and an enquiry route.","facts":[["Communication","Scheme awareness"],["Featured creative","LIC Protection Plus in Telugu"],["Visible structure","Product, family context and enquiry information"]],"insight":"For your TMT brand: present complex product information clearly and support trust with approved, understandable facts.","note":"Presented as a past campaign sample. Policy terms and offers in the original artwork are not current advice or promises.","media":[{"type":"image","label":"Campaign creative","caption":"LIC Protection Plus · Original supplied Telugu creative","src":"assets/w-lic.webp"}],"sources":[{"label":"Original creative","url":"https://drive.google.com/file/d/1XkdcU5K5xhIOgvok3AHKr5mLN9dRHKHK/view"}]},{"id":"indifeast","name":"Indifeast","label":"Regional business promotion","sector":"Consumer products","category":"regional","number":"07","headline":"Visibility that supports local business.","short":"Regional brand promotion and distributor-focused business support.","summary":"My experience includes promoting Indifeast to support a distributor’s business in and around Karnataka. The supplied brand sample shows a clear product range and a direct retail call to action.","facts":[["Reported project scope","Distributor support in and around Karnataka"],["Featured sample","Hyderabad retail promotion"],["Visible creative","Product range and a “Buy now on Zepto” prompt"]],"insight":"For your TMT brand: connect regional visibility with clear dealer and distributor contact points.","note":"The displayed artwork says “Only in Hyderabad”. It is shown as a separate brand sample and is not presented as evidence of the Karnataka distributor campaign.","media":[{"type":"image","label":"Brand creative","caption":"Featured sample: Hyderabad / Zepto retail promotion","src":"assets/w-indifeast.webp"}],"sources":[{"label":"Original creative","url":"https://drive.google.com/file/d/14o-j-MuTy0U0t7kkT7j8OIIZAqMS3owm/view"}]},{"id":"wheelsmart","name":"Wheelsmart","label":"Local brand awareness","sector":"Scooters & retail","category":"regional","number":"08","headline":"Putting a local brand in the conversation.","short":"An awareness campaign for a local scooter brand, with a positive reported sales response.","summary":"My work included a brand-awareness campaign for Wheelsmart, a local scooter brand, to strengthen visibility and purchase interest. A positive sales response was reported during the campaign.","facts":[["Business","Local scooter brand"],["Project scope","Brand-awareness campaign"],["Reported outcome","Positive sales response; figures not supplied"]],"insight":"For your TMT brand: connect local awareness with a clear route to contact a nearby dealer or enquire about products.","note":"Qualitative outcome based on my project account. Campaign artwork, dates and sales figures have not yet been supplied.","media":[{"type":"summary","label":"Project overview","title":"Local visibility.\nReal business intent.","text":"Wheelsmart · Brand-awareness campaign","caption":"Project experience summary"}],"sources":[]},{"id":"tamil","name":"Tamil political campaign","label":"Campaign communication","sector":"Public communication","category":"regional","number":"09","headline":"A compact regional campaign format.","short":"Tamil-language campaign promotion presented through a short video.","summary":"I supported promotion for a Tamil-language political campaign. The supplied video combines event footage, public interviews and on-screen regional-language messaging in a compact format.","facts":[["Experience","Campaign promotion"],["Featured asset","Approximately 15 seconds of video"],["Visible content","Event footage and Tamil messaging"]],"insight":"Included as an additional example of video-led campaign communication and distribution experience.","note":"A record of past work. No election outcome, voting effect or campaign-performance claim is made.","media":[{"type":"video","label":"Play campaign","caption":"Tamil campaign · Full supplied video, optimised for playback","src":"assets/v-tamil.mp4","poster":"assets/w-tamil-poster.webp"}],"sources":[{"label":"Original video","url":"https://drive.google.com/file/d/1s3pn_G1qjr1OGoTY7N__GxE6wZz1zmRK/view"}]}]</script>
+<script>
+(() => {
+  'use strict';
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+  const root = document.documentElement;
+  const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let reduced = motionQuery.matches;
+  root.classList.add('js');
+  root.classList.toggle('rm', reduced);
+
+  // Write a style value only when it changes.
+  const styleCache = new WeakMap();
+  const setStyle = (el, prop, val) => {
+    let c = styleCache.get(el);
+    if (!c) { c = {}; styleCache.set(el, c); }
+    if (c[prop] === val) return;
+    c[prop] = val;
+    if (prop.startsWith('--')) el.style.setProperty(prop, val); else el.style[prop] = val;
+  };
+
+  const cases = JSON.parse($('#project-data').textContent);
+  const byId = {};
+  cases.forEach(c => { byId[c.id] = c; });
+
+  // Missing images fall back to the card's dark gradient.
+  $$('img').forEach(img => {
+    const drop = () => { img.style.visibility = 'hidden'; };
+    if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) drop();
+    else img.addEventListener('error', drop, { once: true });
+  });
+
+  /* ---------------- Background video ---------------- */
+  const header = $('#siteHeader');
+  const vid = $('#bgVideo');
+  const veil = $('#veil');
+  let vidWant = null;
+  const tryPlay = () => {
+    if (reduced) return;
+    try { const p = vid.play(); if (p && p.catch) p.catch(() => {}); } catch (_) { /* poster stays */ }
+  };
+  const setVidWant = want => {
+    if (want === vidWant) return;
+    vidWant = want;
+    if (want) tryPlay(); else if (!vid.paused) vid.pause();
+  };
+  // Some browsers block autoplay until the first interaction.
+  const kick = () => { if (vidWant && vid.paused) tryPlay(); };
+  window.addEventListener('pointerdown', kick, { once: true, passive: true });
+  window.addEventListener('keydown', kick, { once: true });
+
+  /* ---------------- Hero flow window ---------------- */
+  const hero = $('#top');
+  const stage = $('#stage');
+  const rig = $('#rig');
+  const flow = $('#flow');
+  const flowBody = $('#flowBody');
+  const nodes = $$('.fnode', flowBody);
+  // Elevation: each card gets a dashed base plate at the same spot, beneath it.
+  nodes.forEach(n => {
+    const plate = n.cloneNode(true);
+    plate.className = 'fbase';
+    flowBody.insertBefore(plate, nodes[0]);
+  });
+  const layers = $$('.layer', rig).map(el => ({ el, d: Number(el.dataset.depth) || 0, x: 0, y: 0 }));
+  const BASE_RY = -16, BASE_RX = 7, MAX_RY = 13, MAX_RX = 9;
+  let tx = 0, ty = 0, cx = 0, cy = 0, idle = 1e9, touchMode = false, heroVisible = true;
+
+  hero.addEventListener('pointermove', e => {
+    if (e.pointerType === 'touch') { touchMode = true; return; }
+    const r = stage.getBoundingClientRect();
+    if (!r.width || !r.height) return;
+    tx = clamp(((e.clientX - r.left) / r.width) * 2 - 1, -1, 1);
+    ty = clamp(((e.clientY - r.top) / r.height) * 2 - 1, -1, 1);
+    idle = 0;
+    touchMode = false;
+  }, { passive: true });
+  window.addEventListener('touchstart', () => { touchMode = true; }, { passive: true });
+
+  function heroFrame(t) {
+    idle++;
+    if (idle > 90 || touchMode) {
+      tx = Math.sin(t / 2800) * 0.3;
+      ty = Math.cos(t / 3300) * 0.2;
+    }
+    cx += (tx - cx) * 0.07;
+    cy += (ty - cy) * 0.07;
+    const s = clamp(window.scrollY / window.innerHeight, 0, 1);
+    setStyle(rig, 'transform',
+      `rotateY(${(BASE_RY * (1 - s * 0.5) + cx * MAX_RY).toFixed(3)}deg) rotateX(${(BASE_RX - cy * MAX_RX).toFixed(3)}deg) translateY(${(s * -40).toFixed(2)}px)`);
+    layers.forEach((L, i) => {
+      const ease = 0.06 + i * 0.025;
+      L.x += (cx - L.x) * ease;
+      L.y += (cy - L.y) * ease;
+      const k = L.d / 100;
+      setStyle(L.el, 'transform', `translate3d(${(L.x * k * 40).toFixed(2)}px,${(L.y * k * 30).toFixed(2)}px,${L.d}px)`);
+    });
+    nodes.forEach((n, i) => {
+      setStyle(n, '--px', (cx * (16 + i * 4)).toFixed(2) + 'px');
+      setStyle(n, '--py', (cy * (12 + i * 3)).toFixed(2) + 'px');
+    });
+    setStyle(flow, '--gx', ((cx + 1) * 50).toFixed(1) + '%');
+    setStyle(flow, '--gy', ((cy + 1) * 50).toFixed(1) + '%');
+  }
+
+  // Active card walks a route; each finished route logs an enquiry row.
+  const chipB = $('#chipB');
+  const runs = $('#runs');
+  const names = nodes.map(n => n.querySelector('b').lastChild.textContent.trim());
+  const routes = [[0, 1, 3], [0, 2, 3]];
+  const tickets = ['Fe 500D price', 'Dealer near me', 'Bulk order', 'Fe 550D catalogue', 'Dealership enquiry', 'Site delivery'];
+  let ri = 0, si = 0, runNo = 4413;
+  const pad = n => String(n).padStart(2, '0');
+  function setActive(idx) {
+    nodes.forEach((n, i) => n.classList.toggle('on', i === idx));
+    chipB.textContent = 'now · ' + names[idx];
+  }
+  function addRun(route) {
+    const d = new Date();
+    const li = document.createElement('li');
+    li.className = 'new';
+    const time = document.createElement('time');
+    time.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes());
+    const label = document.createElement('span');
+    label.textContent = '#' + runNo + ' ' + tickets[runNo % tickets.length];
+    runNo++;
+    const ok = document.createElement('em');
+    ok.textContent = (route === 0 ? 'Meta' : 'Search') + ' ✓';
+    li.append(time, label, ok);
+    runs.prepend(li);
+    while (runs.children.length > 3) runs.lastElementChild.remove();
+  }
+  // Sample rows read as recent: stamp them relative to the visitor's clock.
+  $$('time', runs).forEach((t, i) => {
+    const d = new Date(Date.now() - (3 + i * 4) * 60000);
+    t.textContent = pad(d.getHours()) + ':' + pad(d.getMinutes());
+  });
+  setActive(0);
+  si = 1;
+  setInterval(() => {
+    if (reduced || !heroVisible || document.hidden) return;
+    if (si >= 3) { addRun(ri); ri ^= 1; si = 0; }
+    setActive(routes[ri][si++]);
+  }, 900);
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; }, { threshold: 0 }).observe(hero);
+  }
+
+  /* ---------------- Work: horizontal scroll ---------------- */
+  const hs = $('#work');
+  const track = $('#track');
+  const hsBar = $('#hsBar');
+  let hsTop = 0, hsDist = 0, hsActive = false;
+  function measureHS() {
+    hsActive = !reduced;
+    hs.classList.toggle('hs-on', hsActive);
+    if (!hsActive) { hs.style.height = ''; track.style.transform = ''; styleCache.delete(track); return; }
+    hsDist = Math.max(0, track.scrollWidth - window.innerWidth);
+    hs.style.height = (window.innerHeight + hsDist) + 'px';
+    hsTop = hs.getBoundingClientRect().top + window.scrollY;
+  }
+  function hsFrame() {
+    if (!hsActive) return;
+    const p = hsDist ? clamp((window.scrollY - hsTop) / hsDist, 0, 1) : 0;
+    setStyle(track, 'transform', `translate3d(${(-p * hsDist).toFixed(1)}px,0,0)`);
+    setStyle(hsBar, 'transform', `scaleX(${p.toFixed(4)})`);
+  }
+  // Keyboard users: bring a focused card into view by scrolling the page.
+  track.addEventListener('focusin', e => {
+    if (!hsActive || !hsDist) return;
+    const card = e.target.closest('.wcard');
+    if (!card) return;
+    const want = card.offsetLeft - (window.innerWidth - card.offsetWidth) / 2;
+    window.scrollTo({ top: hsTop + clamp(want / hsDist, 0, 1) * hsDist });
+  });
+
+  /* ---------------- Reveal line ---------------- */
+  const rv = $('#reveal');
+  const words = $$('.w', rv);
+  let rvTop = 0, rvH = 0, litN = -1;
+  function measureRV() {
+    rvTop = rv.getBoundingClientRect().top + window.scrollY;
+    rvH = rv.offsetHeight;
+  }
+  function rvFrame() {
+    let n;
+    if (reduced) n = words.length;
+    else {
+      const p = clamp((window.scrollY - rvTop) / Math.max(1, rvH - window.innerHeight), 0, 1);
+      n = Math.floor(p * words.length * 1.15);
+    }
+    if (n === litN) return;
+    litN = n;
+    words.forEach((w, i) => w.classList.toggle('lit', i < n));
+  }
+
+  /* ---------------- Stacking cards ---------------- */
+  const scards = $$('.scard');
+  const dims = scards.map(c => c.querySelector('.sc-dim'));
+  let stickyTops = [], stackNear = false;
+  function measureStack() {
+    stickyTops = scards.map(c => parseFloat(getComputedStyle(c).top) || 0);
+  }
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(([e]) => { stackNear = e.isIntersecting; }, { rootMargin: '200px 0px' }).observe($('#stack'));
+  }
+  function stackFrame() {
+    if (!stackNear) return;
+    if (reduced) {
+      scards.forEach((c, i) => { setStyle(c, 'transform', 'none'); setStyle(dims[i], 'opacity', '0'); });
+      return;
+    }
+    const vh = window.innerHeight;
+    const tops = scards.map(c => c.getBoundingClientRect().top);
+    const arrive = tops.map((top, j) => (j === 0 ? 1 : clamp((vh - top) / Math.max(1, vh - stickyTops[j]), 0, 1)));
+    scards.forEach((c, i) => {
+      let depth = 0;
+      for (let j = i + 1; j < scards.length; j++) depth += arrive[j];
+      setStyle(c, 'transform', depth > 0.001 ? `scale(${(1 - 0.035 * depth).toFixed(4)})` : 'none');
+      setStyle(dims[i], 'opacity', ((arrive[i + 1] || 0) * 0.55).toFixed(3));
+    });
+  }
+
+  /* ---------------- Count-ups and in-view states ---------------- */
+  function countUp(el, to, dur, fmt) {
+    if (reduced) { el.textContent = fmt(to); return; }
+    const t0 = performance.now();
+    const tick = now => {
+      const k = clamp((now - t0) / dur, 0, 1);
+      const e = 1 - Math.pow(1 - k, 3);
+      el.textContent = fmt(Math.round(to * e));
+      if (k < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+  const io = 'IntersectionObserver' in window;
+  const panelObs = io && new IntersectionObserver(entries => entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    panelObs.unobserve(e.target);
+    e.target.classList.add('in');
+    const g = e.target.querySelector('[data-count]');
+    if (g) countUp(g, Number(g.dataset.count), 1600, v => v + '%');
+  }), { threshold: 0.35 });
+  $$('.sc-visual').forEach(v => {
+    if (reduced || !panelObs) { v.classList.add('in'); return; }
+    const g = v.querySelector('[data-count]');
+    if (g) g.textContent = '0%';
+    panelObs.observe(v);
+  });
+  const statObs = io && new IntersectionObserver(entries => entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    statObs.unobserve(e.target);
+    e.target.classList.add('in');
+    const n = e.target.querySelector('.stat-num');
+    countUp(n, Number(n.dataset.to), 1600, v => pad(v));
+  }), { threshold: 0.4 });
+  $$('.stat').forEach(s => {
+    if (reduced || !statObs) { s.classList.add('in'); return; }
+    s.querySelector('.stat-num').textContent = '00';
+    statObs.observe(s);
+  });
+
+  /* ---------------- Main loop ---------------- */
+  let sy = window.scrollY;
+  function frame(t) {
+    const y = window.scrollY;
+    const ih = window.innerHeight;
+    sy += (y - sy) * 0.075;
+    if (Math.abs(y - sy) < 0.05) sy = y;
+    if (!reduced) {
+      const vx = Math.sin(sy / 700) * 7 + Math.sin(sy / 1900) * 3;
+      const vy = Math.sin(sy / 1300) * -2;
+      const sc = 1.02 + Math.abs(Math.sin(sy / 1600)) * 0.04;
+      const rot = Math.sin(sy / 1100) * -1.2;
+      setStyle(vid, 'transform', `translate3d(${vx.toFixed(3)}vw,${vy.toFixed(3)}vh,0) scale(${sc.toFixed(4)}) rotate(${rot.toFixed(3)}deg)`);
+    }
+    setStyle(vid, 'opacity', (0.6 * (1 - clamp(sy / ih, 0, 1) * 0.6)).toFixed(3));
+    const veilOp = clamp((sy - ih * 0.12) / (ih * 0.45), 0, 1) * 0.97;
+    setStyle(veil, 'opacity', veilOp.toFixed(3));
+    setVidWant(veilOp < 0.965);
+    header.classList.toggle('scrolled', y > 24);
+    if (heroVisible && !reduced) heroFrame(t);
+    hsFrame();
+    rvFrame();
+    stackFrame();
+    requestAnimationFrame(frame);
+  }
+
+  /* ---------------- Measurement ---------------- */
+  let lastW = window.innerWidth, lastH = window.innerHeight, rT = 0;
+  function measureAll() {
+    measureHS();
+    measureRV();
+    measureStack();
+  }
+  const scheduleMeasure = () => { clearTimeout(rT); rT = setTimeout(measureAll, 120); };
+  window.addEventListener('resize', () => {
+    const w = window.innerWidth, h = window.innerHeight;
+    // Ignore small height-only changes from mobile browser toolbars.
+    if (w === lastW && Math.abs(h - lastH) < 160) return;
+    lastW = w; lastH = h;
+    scheduleMeasure();
+  });
+  window.addEventListener('load', measureAll);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(measureAll);
+  if ('ResizeObserver' in window) new ResizeObserver(scheduleMeasure).observe($('main'));
+  motionQuery.addEventListener && motionQuery.addEventListener('change', e => {
+    reduced = e.matches;
+    root.classList.toggle('rm', reduced);
+    if (reduced) { vid.pause(); $$('.sc-visual, .stat').forEach(n => n.classList.add('in')); }
+    else tryPlay();
+    litN = -1;
+    measureAll();
+  });
+
+  measureAll();
+  heroFrame(0);
+  requestAnimationFrame(frame);
+
+  /* ---------------- Project + notes dialogs ---------------- */
+  const pd = $('#pdialog');
+  const nd = $('#ndialog');
+  const pdStage = $('#pdStage');
+  const pdTabs = $('#pdTabs');
+  const pdOpen = $('#pdOpen');
+  let cur = null, mediaIdx = 0, activeVideo = null, lastFocus = null;
+  const el = (tag, cls, text) => {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  };
+  const ext = (url, label, cls) => {
+    const a = el('a', cls, label);
+    a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    return a;
+  };
+  function disposeMedia() {
+    if (activeVideo) {
+      activeVideo.pause();
+      activeVideo.removeAttribute('src');
+      activeVideo.load();
+      activeVideo = null;
+    }
+    pdStage.replaceChildren();
+    pdOpen.replaceChildren();
+  }
+  function renderMedia(i) {
+    const c = byId[cur];
+    mediaIdx = clamp(i, 0, c.media.length - 1);
+    const m = c.media[mediaIdx];
+    disposeMedia();
+    if (m.type === 'image') {
+      const img = el('img');
+      img.src = m.src;
+      img.alt = m.caption || c.name + ' project image';
+      pdStage.append(img);
+      pdOpen.append(ext(m.src, 'OPEN IMAGE ↗', 'pd-open'));
+    } else if (m.type === 'video') {
+      const v = el('video');
+      v.controls = true;
+      v.playsInline = true;
+      v.setAttribute('playsinline', '');
+      v.preload = 'metadata';
+      v.poster = m.poster;
+      v.src = m.src;
+      v.setAttribute('aria-label', m.caption);
+      activeVideo = v;
+      pdStage.append(v);
+      pdOpen.append(ext(m.src, 'OPEN VIDEO ↗', 'pd-open'));
+    } else if (m.type === 'link') {
+      const box = el('div', 'pd-box');
+      box.append(el('span', 'pill', m.label), el('h3', '', m.title), el('p', '', m.text), ext(m.url, m.button + ' ↗', 'btn btn-light'));
+      pdStage.append(box);
+    } else {
+      const box = el('div', 'pd-sum' + (c.id === 'wheelsmart' ? ' v' : ''));
+      box.append(el('p', '', m.text), el('h3', '', m.title));
+      pdStage.append(box);
+    }
+    $('#pdCaption').textContent = m.caption || (m.type === 'link' ? 'External reference · opens in a new tab' : '');
+    $$('.pd-tab', pdTabs).forEach((b, k) => b.setAttribute('aria-pressed', String(k === mediaIdx)));
+  }
+  function showDialog(d) {
+    if (d.open) return;
+    lastFocus = document.activeElement;
+    document.body.classList.add('modal-open');
+    if (typeof d.showModal === 'function') d.showModal(); else d.setAttribute('open', '');
+    const closeBtn = d.querySelector('[data-close]');
+    if (closeBtn) closeBtn.focus({ preventScroll: true });
+  }
+  function onClosed(d) {
+    if (d === pd) disposeMedia();
+    if (!pd.open && !nd.open) document.body.classList.remove('modal-open');
+    if (lastFocus && document.contains(lastFocus)) lastFocus.focus({ preventScroll: true });
+  }
+  function closeDialog(d) {
+    if (!d.open) return;
+    if (typeof d.close === 'function') d.close();
+    else { d.removeAttribute('open'); onClosed(d); }
+  }
+  function openProject(id, i) {
+    const c = byId[id];
+    if (!c) return;
+    cur = id;
+    $('#pdCat').textContent = c.label + ' · ' + c.number;
+    $('#pdBrand').textContent = c.name;
+    $('#pdSector').textContent = c.sector;
+    $('#pdTitle').textContent = c.headline;
+    $('#pdSummary').textContent = c.summary;
+    $('#pdInsight').textContent = c.insight;
+    $('#pdNote').textContent = c.note;
+    const facts = $('#pdFacts');
+    facts.replaceChildren();
+    c.facts.forEach(([k, v]) => facts.append(el('dt', '', k), el('dd', '', v)));
+    const links = $('#pdLinks');
+    links.replaceChildren();
+    c.sources.forEach(s => links.append(ext(s.url, s.label + ' ↗')));
+    links.hidden = !c.sources.length;
+    pdTabs.replaceChildren();
+    c.media.forEach((m, k) => {
+      const b = el('button', 'pd-tab', m.label);
+      b.type = 'button';
+      b.addEventListener('click', () => renderMedia(k));
+      pdTabs.append(b);
+    });
+    pdTabs.hidden = c.media.length < 2;
+    renderMedia(i || 0);
+    showDialog(pd);
+    pd.scrollTop = 0;
+  }
+  const stepProject = dir => {
+    const i = cases.findIndex(c => c.id === cur);
+    openProject(cases[(i + dir + cases.length) % cases.length].id, 0);
+  };
+  $('#pdPrev').addEventListener('click', () => stepProject(-1));
+  $('#pdNext').addEventListener('click', () => stepProject(1));
+  $('#pdClose').addEventListener('click', () => closeDialog(pd));
+  $('#nClose').addEventListener('click', () => closeDialog(nd));
+  pd.addEventListener('keydown', e => {
+    if (e.target.tagName === 'VIDEO') return;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); stepProject(-1); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); stepProject(1); }
+  });
+  [pd, nd].forEach(d => {
+    d.addEventListener('close', () => onClosed(d));
+    d.addEventListener('click', e => {
+      if (e.target !== d) return;
+      const r = d.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) closeDialog(d);
+    });
+  });
+
+  /* ---------------- Copy contact details ---------------- */
+  function copyText(btn) {
+    const reset = label => setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600) && label;
+    const selectIt = () => {
+      const a = btn.parentElement.querySelector('a');
+      const range = document.createRange();
+      range.selectNodeContents(a);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      btn.textContent = 'Selected';
+      reset();
+    };
+    try {
+      navigator.clipboard.writeText(btn.dataset.copy).then(() => {
+        btn.textContent = 'Copied';
+        btn.classList.add('done');
+        reset();
+      }, selectIt);
+    } catch (_) { selectIt(); }
+  }
+
+  document.addEventListener('click', e => {
+    const open = e.target.closest('[data-open]');
+    if (open) { e.preventDefault(); openProject(open.dataset.open, Number(open.dataset.media || 0)); return; }
+    if (e.target.closest('[data-notes]')) { showDialog(nd); nd.scrollTop = 0; return; }
+    const copy = e.target.closest('[data-copy]');
+    if (copy) copyText(copy);
+  });
+})();
+
+</script>
 </body>
 </html>
